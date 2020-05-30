@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C1A6F03-4A46-4FDF-ADFC-E59D4491BD1F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AvaliacaoA1</RootNamespace>
+    <AssemblyName>AvaliacaoA1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IDao\IDaoEntradas.cs" />
+    <Compile Include="IDao\IDaoFornecedor.cs" />
+    <Compile Include="IDao\IDaoRetiradas.cs" />
+    <Compile Include="Model\Entradas.cs" />
+    <Compile Include="Model\Fornecedor.cs" />
+    <Compile Include="Model\Retiradas.cs" />
+    <Compile Include="Session\UsuarioSession.cs" />
+    <Compile Include="View\FormAlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormAlterarSenha.Designer.cs">
+      <DependentUpon>FormAlterarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormCadastroFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormCadastroFornecedor.Designer.cs">
+      <DependentUpon>FormCadastroFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\formCadastroSubCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\formCadastroSubCategoria.Designer.cs">
+      <DependentUpon>formCadastroSubCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormCadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormCadastroUsuario.Designer.cs">
+      <DependentUpon>FormCadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubCategorias.cs" />
+    <Compile Include="Conexão\Conexao.cs" />
+    <Compile Include="View\FormGerenciarFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormGerenciarFornecedores.Designer.cs">
+      <DependentUpon>FormGerenciarFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormGerenciarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormGerenciarUsuario.Designer.cs">
+      <DependentUpon>FormGerenciarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormHistoricoEntradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormHistoricoEntradas.Designer.cs">
+      <DependentUpon>FormHistoricoEntradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormHistoricoRetiradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormHistoricoRetiradas.Designer.cs">
+      <DependentUpon>FormHistoricoRetiradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormCadastroEntradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormCadastroEntradas.Designer.cs">
+      <DependentUpon>FormCadastroEntradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormCadastroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormCadastroProduto.Designer.cs">
+      <DependentUpon>FormCadastroProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormCadastroRetiradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormCadastroRetiradas.Designer.cs">
+      <DependentUpon>FormCadastroRetiradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormEstoque.Designer.cs">
+      <DependentUpon>FormEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDao\IDaoSubCategorias.cs" />
+    <Compile Include="IDao\IDaoProdutos.cs" />
+    <Compile Include="IDao\IDaoUsuario.cs" />
+    <Compile Include="Model\Login.cs" />
+    <Compile Include="Model\Produtos.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Usuario.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\FormPesquisaFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormPesquisaFornecedor.Designer.cs">
+      <DependentUpon>FormPesquisaFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormPesquisaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormPesquisaProduto.Designer.cs">
+      <DependentUpon>FormPesquisaProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormSobre.Designer.cs">
+      <DependentUpon>FormSobre.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\FormAlterarSenha.resx">
+      <DependentUpon>FormAlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormCadastroFornecedor.resx">
+      <DependentUpon>FormCadastroFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\formCadastroSubCategoria.resx">
+      <DependentUpon>formCadastroSubCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormCadastroUsuario.resx">
+      <DependentUpon>FormCadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormGerenciarFornecedores.resx">
+      <DependentUpon>FormGerenciarFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormGerenciarUsuario.resx">
+      <DependentUpon>FormGerenciarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormHistoricoEntradas.resx">
+      <DependentUpon>FormHistoricoEntradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormHistoricoRetiradas.resx">
+      <DependentUpon>FormHistoricoRetiradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormCadastroEntradas.resx">
+      <DependentUpon>FormCadastroEntradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormCadastroProduto.resx">
+      <DependentUpon>FormCadastroProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormCadastroRetiradas.resx">
+      <DependentUpon>FormCadastroRetiradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormEstoque.resx">
+      <DependentUpon>FormEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormPesquisaFornecedor.resx">
+      <DependentUpon>FormPesquisaFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormPesquisaProduto.resx">
+      <DependentUpon>FormPesquisaProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormSobre.resx">
+      <DependentUpon>FormSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\systemusers_94754.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_system_15426.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_contacts_15440.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_cab_15475.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipping_products_22121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar_code_22177.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_disk_22124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice_22150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project_plan_22131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchmagnifierinterfacesymbol1_79893.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salve-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe_Post_20200416_0933510.4043216290402093.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe_Post_20200416_0902470.8175506600410369.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_application_addmale_useradd_insert_add_user_client_2312 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businesspackage_additionalpackage_box_add_insert_negoci_2335.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Truck_Yellow_icon-icons.com_54884.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck_icon-icons.com_52347.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart-add256_24821.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conveyorbelt_118075.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck_23744.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder-basket-4341280_120547.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_document_file_icon_123491.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical_icon_4_icon-icons.com_66661.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical_icon_4_icon-icons.com_66661 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder-folder-4341292_120540.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery_46877.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice_106601.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcodescanning_106580.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1485476000-artboard-1_78543.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-contact-folded-icon_30480.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people_14383.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486564400-account_81513.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-green256_25015.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contacts_23830.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compose_23855.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
