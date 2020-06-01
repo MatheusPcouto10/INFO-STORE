@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPesquisaProduto));
             this.btnLimpar = new System.Windows.Forms.Button();
             this.dgPesquisa_Produtos = new System.Windows.Forms.DataGridView();
             this.btnPesquisarProduto = new System.Windows.Forms.Button();
@@ -231,12 +232,15 @@
             this.Controls.Add(this.txtNomeProduto);
             this.Controls.Add(this.label7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FormPesquisaProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pesquisa de Produto";
             this.Load += new System.EventHandler(this.FormPesquisaProduto_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormPesquisaProduto_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgPesquisa_Produtos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

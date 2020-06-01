@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAlterarSenha));
             this.btnSalvar = new System.Windows.Forms.Button();
             this.txtConfirmarNovaSenha = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -128,11 +129,14 @@
             this.Controls.Add(this.txtNovaSenha);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FormAlterarSenha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alterar Senha";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormAlterarSenha_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

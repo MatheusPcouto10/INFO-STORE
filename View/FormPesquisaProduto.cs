@@ -267,15 +267,15 @@ namespace AvaliacaoA1.View
             }
             else if (formAtual == "historicoEntradas")
             {
-                //(Application.OpenForms["FormHistoricoEntradas"].Controls["tabControl1"].Controls["telaEditar"].Controls["txtIdFornecedor"] as TextBox).Text = txtIdFornecedor.Text;
-                //(Application.OpenForms["FormHistoricoEntradas"].Controls["tabControl1"].Controls["telaEditar"].Controls["txtNomeFantasia"] as TextBox).Text = txtNomeFantasia.Text;
-                //this.Hide();
+                (Application.OpenForms["FormHistoricoEntradas"].Controls["tabControl1"].Controls["telaEditar"].Controls["txtIdProduto"] as TextBox).Text = txtIdProduto.Text;
+                (Application.OpenForms["FormHistoricoEntradas"].Controls["tabControl1"].Controls["telaEditar"].Controls["txtNomeProduto"] as TextBox).Text = txtNomeProduto.Text;
+                this.Hide();
             }
             else if (formAtual == "historicoRetiradas")
             {
-                //(Application.OpenForms["FormHistoricoRetiradas"].Controls["tabControl1"].Controls["telaEditar"].Controls["txtIdFornecedor"] as TextBox).Text = txtIdFornecedor.Text;
-                //(Application.OpenForms["FormHistoricoRetiradas"].Controls["tabControl1"].Controls["telaEditar"].Controls["txtNomeFantasia"] as TextBox).Text = txtNomeFantasia.Text;
-                //this.Hide();
+                (Application.OpenForms["FormHistoricoRetiradas"].Controls["tabControl1"].Controls["telaEditar"].Controls["txtIdProduto"] as TextBox).Text = txtIdProduto.Text;
+                (Application.OpenForms["FormHistoricoRetiradas"].Controls["tabControl1"].Controls["telaEditar"].Controls["txtNomeProduto"] as TextBox).Text = txtNomeProduto.Text;
+                this.Hide();
             }
         }
 
@@ -318,6 +318,21 @@ namespace AvaliacaoA1.View
                     default:
                         break;
                 }
+            }
+        }
+
+        private void FormPesquisaProduto_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Enter:
+                    this.btnPesquisarProduto_Click(null, null);
+                    break;
+                case Keys.Escape:
+                    this.Close();
+                    break;
+                default:
+                    break;
             }
         }
     }

@@ -54,7 +54,6 @@ namespace AvaliacaoA1.View
                 fornecedor.email = txtEmailFornecedor.Text;
 
                 fornecedor.create(fornecedor);
-                MessageBox.Show("Fornecedor cadastrado com sucesso!");
                 this.btnLimpar_Click(null, null);
             }
             else

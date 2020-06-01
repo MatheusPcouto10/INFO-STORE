@@ -27,6 +27,7 @@ namespace AvaliacaoA1
                 cmd.Connection = conexao.Conectar();
                 cmd.ExecuteNonQuery();
                 conexao.Desconectar();
+                MessageBox.Show("Sub-Categoria cadastrada com sucesso!");
             }
             catch (Exception ex)
             {
@@ -50,7 +51,7 @@ namespace AvaliacaoA1
             {
                 cmd.CommandText = "UPDATE subcategorias SET nomeSubCategoria = '" + t.nomeSubCategoria +
                                                                      "', idCategoria_fk = '" + t.idCategoria_fk +
-                                                                     "' WHERE idProduto LIKE '" + idSubCategorias + "'";
+                                                                     "' WHERE idSubCategorias LIKE '" + idSubCategorias + "'";
                 cmd.Connection = conexao.Conectar();
                 cmd.ExecuteNonQuery();
                 conexao.Desconectar();

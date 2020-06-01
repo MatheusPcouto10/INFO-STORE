@@ -63,5 +63,20 @@ namespace AvaliacaoA1.View
                 MessageBox.Show("Erro: " + ex);
             }
         }
+
+        private void FormAlterarSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Enter:
+                    this.btnSalvar_Click(null, null);
+                    break;
+                case Keys.Escape:
+                    this.Close();
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

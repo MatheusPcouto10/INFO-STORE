@@ -46,7 +46,9 @@
             this.linkCadastroFornecedor = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnFormCadastroSubCategoria = new System.Windows.Forms.ToolStripButton();
+            this.btnCategoria_SubCategoria = new System.Windows.Forms.ToolStripDropDownButton();
+            this.cadastrarCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarSubCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripDropDownButton();
             this.relátórioDeUsuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -333,7 +335,7 @@
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(16, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnFormCadastroSubCategoria,
+            this.btnCategoria_SubCategoria,
             this.toolStripSeparator2,
             this.toolStripButton2,
             this.toolStripSeparator7,
@@ -343,20 +345,36 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 68);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip1.Size = new System.Drawing.Size(451, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(477, 27);
             this.toolStrip1.TabIndex = 16;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // btnFormCadastroSubCategoria
+            // btnCategoria_SubCategoria
             // 
-            this.btnFormCadastroSubCategoria.BackColor = System.Drawing.SystemColors.Control;
-            this.btnFormCadastroSubCategoria.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnFormCadastroSubCategoria.Image = ((System.Drawing.Image)(resources.GetObject("btnFormCadastroSubCategoria.Image")));
-            this.btnFormCadastroSubCategoria.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnFormCadastroSubCategoria.Name = "btnFormCadastroSubCategoria";
-            this.btnFormCadastroSubCategoria.Size = new System.Drawing.Size(176, 24);
-            this.btnFormCadastroSubCategoria.Text = "Cadastrar Sub-Categoria";
-            this.btnFormCadastroSubCategoria.Click += new System.EventHandler(this.btnFormCadastroSubCategoria_Click);
+            this.btnCategoria_SubCategoria.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCategoria_SubCategoria.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnCategoria_SubCategoria.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrarCategoriaToolStripMenuItem,
+            this.cadastrarSubCategoriaToolStripMenuItem});
+            this.btnCategoria_SubCategoria.Image = ((System.Drawing.Image)(resources.GetObject("btnCategoria_SubCategoria.Image")));
+            this.btnCategoria_SubCategoria.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnCategoria_SubCategoria.Name = "btnCategoria_SubCategoria";
+            this.btnCategoria_SubCategoria.Size = new System.Drawing.Size(202, 24);
+            this.btnCategoria_SubCategoria.Text = "Categorias/Sub-Categorias";
+            // 
+            // cadastrarCategoriaToolStripMenuItem
+            // 
+            this.cadastrarCategoriaToolStripMenuItem.Name = "cadastrarCategoriaToolStripMenuItem";
+            this.cadastrarCategoriaToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
+            this.cadastrarCategoriaToolStripMenuItem.Text = "Cadastrar Categoria";
+            this.cadastrarCategoriaToolStripMenuItem.Click += new System.EventHandler(this.cadastrarCategoriaToolStripMenuItem_Click);
+            // 
+            // cadastrarSubCategoriaToolStripMenuItem
+            // 
+            this.cadastrarSubCategoriaToolStripMenuItem.Name = "cadastrarSubCategoriaToolStripMenuItem";
+            this.cadastrarSubCategoriaToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
+            this.cadastrarSubCategoriaToolStripMenuItem.Text = "Cadastrar Sub-Categoria";
+            this.cadastrarSubCategoriaToolStripMenuItem.Click += new System.EventHandler(this.cadastrarSubCategoriaToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -560,17 +578,16 @@
             // 
             this.linkGerenciarUsuarios.AutoSize = true;
             this.linkGerenciarUsuarios.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkGerenciarUsuarios.LinkArea = new System.Windows.Forms.LinkArea(0, 19);
+            this.linkGerenciarUsuarios.LinkArea = new System.Windows.Forms.LinkArea(0, 20);
             this.linkGerenciarUsuarios.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkGerenciarUsuarios.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.linkGerenciarUsuarios.Location = new System.Drawing.Point(192, 224);
             this.linkGerenciarUsuarios.Name = "linkGerenciarUsuarios";
-            this.linkGerenciarUsuarios.Size = new System.Drawing.Size(95, 54);
+            this.linkGerenciarUsuarios.Size = new System.Drawing.Size(87, 48);
             this.linkGerenciarUsuarios.TabIndex = 9;
             this.linkGerenciarUsuarios.TabStop = true;
             this.linkGerenciarUsuarios.Text = "GERENCIAR \r\nUSUÁRIOS";
             this.linkGerenciarUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.linkGerenciarUsuarios.UseCompatibleTextRendering = true;
             this.linkGerenciarUsuarios.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkGerenciarUsuarios_LinkClicked);
             // 
             // pictureBox2
@@ -698,6 +715,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(1407, 697);
             this.Name = "FormMenu";
@@ -705,7 +724,9 @@
             this.Text = "Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMenu_FormClosed);
+            this.Load += new System.EventHandler(this.FormMenu_Load);
             this.Shown += new System.EventHandler(this.FormMenu_Shown);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormMenu_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -775,11 +796,13 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.Button button1;
-        public System.Windows.Forms.ToolStripButton btnFormCadastroSubCategoria;
         public System.Windows.Forms.LinkLabel linkGerenciarFornecedores;
         public System.Windows.Forms.LinkLabel linkCadastroFornecedor;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
+        public System.Windows.Forms.ToolStripDropDownButton btnCategoria_SubCategoria;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarCategoriaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarSubCategoriaToolStripMenuItem;
     }
 }
 

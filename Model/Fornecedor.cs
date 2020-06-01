@@ -38,6 +38,7 @@ namespace AvaliacaoA1.Model
                 cmd.Connection = conexao.Conectar();
                 cmd.ExecuteNonQuery();
                 conexao.Desconectar();
+                MessageBox.Show("Fornecedor cadastrado com sucesso!");
             }
             catch (Exception ex)
             {

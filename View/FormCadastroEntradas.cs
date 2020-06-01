@@ -44,7 +44,6 @@ namespace AvaliacaoA1.View
                 entradas.idUsuario = UsuarioSession.idUsuario;
                 entradas.idFornecedor = Convert.ToInt32(txtIdFornecedor.Text);
                 entradas.create(entradas);
-                MessageBox.Show("Remessa adicionada com sucesso!");
                 this.CarregarDataGrid();
                 this.btnLimpar_Click(null, null);
             }
@@ -81,7 +80,7 @@ namespace AvaliacaoA1.View
                 switch (coluna.Name)
                 {
                     case "idProduto":
-                        coluna.Width = 100;
+                        coluna.Width = 70;
                         coluna.HeaderText = "Código";
                         coluna.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         break;
@@ -90,18 +89,26 @@ namespace AvaliacaoA1.View
                         coluna.HeaderText = "Produto";
                         break;
                     case "qtdDisponivel":
-                        coluna.Width = 100;
+                        coluna.Width = 70;
                         coluna.HeaderText = "Quantidade Disponível";
                         coluna.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         break;
                     case "precoAtual":
-                        coluna.Width = 130;
+                        coluna.Width = 110;
                         coluna.HeaderText = "Preço Atual";
                         coluna.DefaultCellStyle.Format = "C2";
                         coluna.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         break;
                     case "selecionar":
+                        coluna.Width = 70;
+                        break;
+                    case "nomeSubCategoria":
                         coluna.Width = 100;
+                        coluna.HeaderText = "Sub-Categoria";
+                        break;
+                    case "nomeCategoria":
+                        coluna.Width = 100;
+                        coluna.HeaderText = "Categoria";
                         break;
                     default:
                         break;
@@ -113,9 +120,11 @@ namespace AvaliacaoA1.View
             try
             {
                 cmd.Connection = conexao.Conectar();
-                cmd.CommandText = @"SELECT p.idProduto, p.nomeProduto, e.qtdDisponivel, e.precoAtual
+                cmd.CommandText = @"SELECT p.idProduto, p.nomeProduto, c.nomeCategoria, s.nomeSubCategoria, e.qtdDisponivel, e.precoAtual
                                   FROM[dbo].[Produtos] AS p INNER JOIN dbo.Estoque AS e 
-                                  ON p.idProduto = e.idProduto_fk AND p.status = 'Em Atividade'";
+                                  ON p.idProduto = e.idProduto_fk INNER JOIN dbo.SubCategorias AS s 
+                                  ON p.idSubCategoria_fk = s.idSubCategorias INNER JOIN dbo.Categorias AS c
+                                  ON s.idCategoria_fk = c.idCategoria AND p.status = 'Em Atividade'";
 
 
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -143,7 +152,7 @@ namespace AvaliacaoA1.View
             this.CarregarDataGrid();
         }
 
-        public void btnPesquisa_Click(object sender, EventArgs e)
+        public void btnFormPesquisa_Produto_Click(object sender, EventArgs e)
         {
             FormPesquisaProduto formPesquisaProduto = new FormPesquisaProduto();
             if (txtIdProduto.Text == "")
@@ -151,7 +160,8 @@ namespace AvaliacaoA1.View
                 formPesquisaProduto.formAtual = "cadastroEntradas";
                 formPesquisaProduto.Show();
             }
-            else {
+            else
+            {
                 try
                 {
                     SqlCommand cmd = new SqlCommand();
@@ -162,7 +172,7 @@ namespace AvaliacaoA1.View
                                   ON p.idProduto = e.idProduto_fk AND p.status = 'Em Atividade' AND p.idProduto = " + txtIdProduto.Text;
 
                     SqlDataReader dr = cmd.ExecuteReader();
-                    
+
                     if (dr.HasRows == true)
                     {
                         DataTable dt = new DataTable();
@@ -182,7 +192,7 @@ namespace AvaliacaoA1.View
                 }
                 conexao.Desconectar();
             }
-            
+
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -210,49 +220,12 @@ namespace AvaliacaoA1.View
 
                 if (dr.Read())
                 {
-                   txtIdFornecedor.Text = dr[0].ToString();
-                   txtNomeFantasia.Text = dr[1].ToString();
+                    txtIdFornecedor.Text = dr[0].ToString();
+                    txtNomeFantasia.Text = dr[1].ToString();
                 }
                 else
                 {
                     MessageBox.Show("Nenhum fornecedor encontrado");
-                }
-                conexao.Desconectar();
-            }
-
-        }
-
-        private void txtIdProduto_TextChanged(object sender, EventArgs e)
-        {
-            if (txtIdProduto.Text != "")
-            {
-                try
-                {
-                    SqlCommand cmd = new SqlCommand();
-                    cmd.Connection = conexao.Conectar();
-
-                    cmd.CommandText = @"SELECT p.idProduto, p.nomeProduto, e.qtdDisponivel, e.precoAtual
-                                  FROM[dbo].[Produtos] AS p INNER JOIN dbo.Estoque AS e
-                                  ON p.idProduto = e.idProduto_fk AND p.status = 'Em Atividade' AND p.idProduto = " + txtIdProduto.Text;
-
-                    SqlDataReader dr = cmd.ExecuteReader();
-
-                    if (dr.HasRows == true)
-                    {
-                        DataTable dt = new DataTable();
-
-                        dt.Load(dr);
-                        dgProdutos_Entrada.DataSource = dt;
-
-                    }
-                    else
-                    {
-                        MessageBox.Show("Nenhum produto encontrado");
-                    }
-                }
-                catch (Exception erro)
-                {
-                    MessageBox.Show("Erro: " + erro.Message);
                 }
                 conexao.Desconectar();
             }

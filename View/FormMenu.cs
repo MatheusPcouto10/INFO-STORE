@@ -23,7 +23,7 @@ namespace AvaliacaoA1
 
         private void linkCadastroUsuario_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            CadastroUsuario formCadastroUsuario = new CadastroUsuario();
+            FormCadastroUsuario formCadastroUsuario = new FormCadastroUsuario();
             formCadastroUsuario.Show();
         }
 
@@ -100,12 +100,6 @@ namespace AvaliacaoA1
             formSobre.Show();
         }
 
-        private void btnFormCadastroSubCategoria_Click(object sender, EventArgs e)
-        {
-            formCadastroSubCategoria formCadastroSubCategoria = new formCadastroSubCategoria();
-            formCadastroSubCategoria.Show();
-        }
-
         private void linkCadastroFornecedor_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FormCadastroFornecedor formCadastroFornecedor = new FormCadastroFornecedor();
@@ -116,6 +110,50 @@ namespace AvaliacaoA1
         {
             FormGerenciarFornecedores formGerenciarFornecedores = new FormGerenciarFornecedores();
             formGerenciarFornecedores.Show();
+        }
+
+        private void cadastrarCategoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCadastroCategoria formCadastroCategoria = new FormCadastroCategoria();
+            formCadastroCategoria.Show();
+        }
+
+        private void cadastrarSubCategoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formCadastroSubCategoria formCadastroSubCategoria = new formCadastroSubCategoria();
+            formCadastroSubCategoria.Show();
+        }
+
+        private void controleAcesso()
+        {
+            if (UsuarioSession.tipoUsuario.Equals("Funcionário"))
+            {
+                this.linkCadastroUsuario.Enabled = false;
+                this.linkGerenciarUsuarios.Enabled = false;
+                this.btnCategoria_SubCategoria.Enabled = false;
+                this.linkCadastroFornecedor.Enabled = false;
+                this.linkGerenciarFornecedores.Enabled = false;
+            }
+        }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+            this.labelTipoUsuarioLogado.Text = UsuarioSession.tipoUsuario;
+            this.labelIdUsuarioLogado.Text = UsuarioSession.idUsuario.ToString();
+            this.labelUsuarioLogado.Text = UsuarioSession.nomeUsuario;
+            this.controleAcesso();
+        }
+
+        private void FormMenu_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Escape:
+                    this.btnSair_Click(null, null);
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

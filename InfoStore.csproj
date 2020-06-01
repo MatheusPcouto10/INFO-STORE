@@ -47,9 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IDao\IDaoCategorias.cs" />
     <Compile Include="IDao\IDaoEntradas.cs" />
     <Compile Include="IDao\IDaoFornecedor.cs" />
     <Compile Include="IDao\IDaoRetiradas.cs" />
+    <Compile Include="Model\Categorias.cs" />
     <Compile Include="Model\Entradas.cs" />
     <Compile Include="Model\Fornecedor.cs" />
     <Compile Include="Model\Retiradas.cs" />
@@ -59,6 +61,12 @@
     </Compile>
     <Compile Include="View\FormAlterarSenha.Designer.cs">
       <DependentUpon>FormAlterarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormCadastroCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormCadastroCategoria.Designer.cs">
+      <DependentUpon>FormCadastroCategoria.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormCadastroFornecedor.cs">
       <SubType>Form</SubType>
@@ -173,6 +181,9 @@
     </Compile>
     <EmbeddedResource Include="View\FormAlterarSenha.resx">
       <DependentUpon>FormAlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormCadastroCategoria.resx">
+      <DependentUpon>FormCadastroCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormCadastroFornecedor.resx">
       <DependentUpon>FormCadastroFornecedor.cs</DependentUpon>

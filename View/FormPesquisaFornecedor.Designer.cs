@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPesquisaFornecedor));
             this.txtNomeFornecedor = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -266,12 +267,15 @@
             this.Controls.Add(this.txtNomeFornecedor);
             this.Controls.Add(this.label7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FormPesquisaFornecedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pesquisa de Fornecedor";
             this.Load += new System.EventHandler(this.FormPesquisaFornecedor_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormPesquisaFornecedor_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgPesquisa_Fornecedores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fornecedoresBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fornecedoresBindingSource1)).EndInit();

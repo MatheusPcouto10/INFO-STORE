@@ -68,7 +68,7 @@ namespace AvaliacaoA1.View
                     MessageBox.Show("Erro: " + erro.Message);
                 }
                 conexao.Desconectar();
-            } 
+            }
         }
 
         private void dgEntradas_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
@@ -168,9 +168,11 @@ namespace AvaliacaoA1.View
             try
             {
                 cmd.Connection = conexao.Conectar();
-                cmd.CommandText = @"SELECT p.idProduto, p.nomeProduto, e.qtdDisponivel, e.precoAtual
+                cmd.CommandText = @"SELECT p.idProduto, p.nomeProduto, c.nomeCategoria, s.nomeSubCategoria, e.qtdDisponivel, e.precoAtual
                                   FROM[dbo].[Produtos] AS p INNER JOIN dbo.Estoque AS e 
-                                  ON p.idProduto = e.idProduto_fk AND p.status = 'Em Atividade'";
+                                  ON p.idProduto = e.idProduto_fk INNER JOIN dbo.SubCategorias AS s 
+                                  ON p.idSubCategoria_fk = s.idSubCategorias INNER JOIN dbo.Categorias AS c
+                                  ON s.idCategoria_fk = c.idCategoria AND p.status = 'Em Atividade'";
 
 
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -199,7 +201,7 @@ namespace AvaliacaoA1.View
                 switch (coluna.Name)
                 {
                     case "idProduto":
-                        coluna.Width = 100;
+                        coluna.Width = 70;
                         coluna.HeaderText = "Código";
                         coluna.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         break;
@@ -208,18 +210,26 @@ namespace AvaliacaoA1.View
                         coluna.HeaderText = "Produto";
                         break;
                     case "qtdDisponivel":
-                        coluna.Width = 100;
+                        coluna.Width = 70;
                         coluna.HeaderText = "Quantidade Disponível";
                         coluna.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         break;
                     case "precoAtual":
-                        coluna.Width = 130;
+                        coluna.Width = 110;
                         coluna.HeaderText = "Preço Atual";
                         coluna.DefaultCellStyle.Format = "C2";
                         coluna.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         break;
                     case "selecionar":
+                        coluna.Width = 70;
+                        break;
+                    case "nomeSubCategoria":
                         coluna.Width = 100;
+                        coluna.HeaderText = "Sub-Categoria";
+                        break;
+                    case "nomeCategoria":
+                        coluna.Width = 100;
+                        coluna.HeaderText = "Categoria";
                         break;
                     default:
                         break;
@@ -250,8 +260,6 @@ namespace AvaliacaoA1.View
                         DataTable dt = new DataTable();
                         dt.Load(dr); // Carrega os dados para o DataTable
                         dgProdutos_Entrada.DataSource = dt; // Preenche o DataGridView
-                        DataGridViewCheckBoxCell chk = new DataGridViewCheckBoxCell();
-                        chk.Value = true;
 
                     }
                     else
@@ -263,6 +271,8 @@ namespace AvaliacaoA1.View
                     txtQuantidadeEntrada.Text = dgEntradas.Rows[e.RowIndex].Cells["qtdEntrada"].Value.ToString();
                     txtIdFornecedor.Text = dgEntradas.Rows[e.RowIndex].Cells["idFornecedor_fk"].Value.ToString();
                     txtNomeFantasia.Text = dgEntradas.Rows[e.RowIndex].Cells["nomeFantasia"].Value.ToString();
+                    txtNomeProduto.Text = dgEntradas.Rows[e.RowIndex].Cells["nomeProduto"].Value.ToString();
+                    txtIdProduto.Text = dgProdutos_Entrada.Rows[0].Cells["idProduto"].Value.ToString();
 
                     tabControl1.SelectedIndex = 1;
                     btnSalvarEntrada.Enabled = true;
@@ -304,7 +314,6 @@ namespace AvaliacaoA1.View
                 entradas.idUsuario = UsuarioSession.idUsuario;
 
                 entradas.update(entradas, idEntrada);
-                MessageBox.Show("Remessa alterada com sucesso!");
                 tabControl1.SelectedIndex = 0;
                 btnSalvarEntrada.Enabled = false;
                 this.CarregarDataGrid();
@@ -315,38 +324,47 @@ namespace AvaliacaoA1.View
             }
         }
 
-        private void btnPesquisaProdutos_Entrada_Click(object sender, EventArgs e)
+        private void btnFormPesquisa_Produto_Click(object sender, EventArgs e)
         {
-            try
+            FormPesquisaProduto formPesquisaProduto = new FormPesquisaProduto();
+            if (txtIdProduto.Text == "")
             {
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conexao.Conectar();
+                formPesquisaProduto.formAtual = "historicoEntradas";
+                formPesquisaProduto.Show();
+            }
+            else
+            {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conexao.Conectar();
 
-                cmd.CommandText = @"SELECT p.idProduto, p.nomeProduto, e.qtdDisponivel, e.precoAtual
+                    cmd.CommandText = @"SELECT p.idProduto, p.nomeProduto, e.qtdDisponivel, e.precoAtual
                                   FROM[dbo].[Produtos] AS p INNER JOIN dbo.Estoque AS e
-                                  ON p.idProduto = e.idProduto_fk AND p.status = 'Em Atividade' AND p.idProduto = " + txtPesquisaEntrada.Text;
+                                  ON p.idProduto = e.idProduto_fk AND p.status = 'Em Atividade' AND p.idProduto = " + txtIdProduto.Text;
 
-                SqlDataReader dr = cmd.ExecuteReader();
+                    SqlDataReader dr = cmd.ExecuteReader();
 
-                if (dr.HasRows == true)
-                {
+                    if (dr.HasRows == true)
+                    {
 
-                    DataTable dt = new DataTable();
+                        DataTable dt = new DataTable();
 
-                    dt.Load(dr);
-                    dgProdutos_Entrada.DataSource = dt;
+                        dt.Load(dr);
+                        dgProdutos_Entrada.DataSource = dt;
 
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nenhum produto encontrado");
+                    }
                 }
-                else if (txtPesquisa.Text == null)
+                catch (Exception erro)
                 {
-                    this.CarregarDataGridProdutos_Entradas();
+                    MessageBox.Show("Erro: " + erro.Message);
                 }
+                conexao.Desconectar();
             }
-            catch (Exception erro)
-            {
-                MessageBox.Show("Erro: " + erro.Message);
-            }
-            conexao.Desconectar();
         }
 
         private void btnFormPesquisaFornecedor_Click(object sender, EventArgs e)
@@ -371,6 +389,10 @@ namespace AvaliacaoA1.View
                 {
                     txtIdFornecedor.Text = dr[0].ToString();
                     txtNomeFantasia.Text = dr[1].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum Fornecedor encontrado");
                 }
                 conexao.Desconectar();
             }

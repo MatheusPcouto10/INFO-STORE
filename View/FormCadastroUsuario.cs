@@ -11,10 +11,10 @@ using AvaliacaoA1.Session;
 
 namespace AvaliacaoA1
 {
-    public partial class CadastroUsuario : Form
+    public partial class FormCadastroUsuario : Form
     {
         Usuario usuario = new Usuario();
-        public CadastroUsuario()
+        public FormCadastroUsuario()
         {
             InitializeComponent();
         }
@@ -57,7 +57,6 @@ namespace AvaliacaoA1
                     if (txtConfirmarSenha.Text == txtSenhaUsuario.Text)
                     {
                         usuario.create(usuario);
-                        MessageBox.Show("Usuário cadastrado com sucesso!");
                         this.btnLimpar_Click(null, null);
                     }
                     else

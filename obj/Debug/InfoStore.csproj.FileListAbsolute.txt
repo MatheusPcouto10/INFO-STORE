@@ -31,7 +31,6 @@ C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\InfoStore.
 C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.View.FormAlterarSenha.resources
 C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.View.FormCadastroFornecedor.resources
 C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.View.formCadastroSubCategoria.resources
-C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.CadastroUsuario.resources
 C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.View.FormGerenciarFornecedores.resources
 C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.FormGerenciarUsuario.resources
 C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.View.FormHistoricoEntradas.resources
@@ -50,3 +49,5 @@ C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\InfoStore.
 C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\InfoStore.csproj.CoreCompileInputs.cache
 C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.exe
 C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.pdb
+C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.FormCadastroUsuario.resources
+C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.View.FormCadastroCategoria.resources

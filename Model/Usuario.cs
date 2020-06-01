@@ -45,6 +45,7 @@ namespace AvaliacaoA1
                 cmd.Connection = conexao.Conectar();
                 cmd.ExecuteNonQuery();
                 conexao.Desconectar();
+                MessageBox.Show("Usuário cadastrado com sucesso!");
             }
             catch (Exception ex)
             {

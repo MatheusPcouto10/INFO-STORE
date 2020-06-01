@@ -23,40 +23,49 @@ namespace AvaliacaoA1.View
             InitializeComponent();
         }
 
-        private void btnPesquisa_Click(object sender, EventArgs e)
+        private void btnFormPesquisa_Produto_Click(object sender, EventArgs e)
         {
-            try
+            FormPesquisaProduto formPesquisaProduto = new FormPesquisaProduto();
+            if (txtIdProduto.Text == "")
             {
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conexao.Conectar();
+                formPesquisaProduto.formAtual = "cadastroRetiradas";
+                formPesquisaProduto.Show();
+            }
+            else
+            {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conexao.Conectar();
 
-                cmd.CommandText = @"SELECT p.idProduto, p.nomeProduto, e.qtdDisponivel, e.precoAtual
+                    cmd.CommandText = @"SELECT p.idProduto, p.nomeProduto, e.qtdDisponivel, e.precoAtual
                                   FROM[dbo].[Produtos] AS p INNER JOIN dbo.Estoque AS e
-                                  ON p.idProduto = e.idProduto_fk AND p.status = 'Em Atividade' AND p.idProduto LIKE '%" + txtPesquisa.Text + "%'";
+                                  ON p.idProduto = e.idProduto_fk AND p.status = 'Em Atividade' AND p.idProduto = " + txtIdProduto.Text;
 
-                SqlDataReader dr = cmd.ExecuteReader();
+                    SqlDataReader dr = cmd.ExecuteReader();
 
-                if (dr.HasRows == true)
-                {
+                    if (dr.HasRows == true)
+                    {
 
-                    DataTable dt = new DataTable();
+                        DataTable dt = new DataTable();
 
-                    dt.Load(dr);
-                    dgProdutos_Retirada.DataSource = dt;
+                        dt.Load(dr);
+                        dgProdutos_Retirada.DataSource = dt;
 
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nenhum Produto encontrado");
+                    }
                 }
-                else if (txtPesquisa.Text == null)
+                catch (Exception erro)
                 {
-                    this.CarregarDataGrid();
+                    // Exibe a mensagem de erro
+                    MessageBox.Show("Erro: " +
+                        erro.Message);
                 }
+                conexao.Desconectar();
             }
-            catch (Exception erro)
-            {
-                // Exibe a mensagem de erro
-                MessageBox.Show("Erro: " +
-                    erro.Message);
-            }
-            conexao.Desconectar();
         }
 
         private void CarregarDataGrid()
@@ -64,9 +73,11 @@ namespace AvaliacaoA1.View
             try
             {
                 cmd.Connection = conexao.Conectar();
-                cmd.CommandText = @"SELECT p.idProduto, p.nomeProduto, e.qtdDisponivel, e.precoAtual
+                cmd.CommandText = @"SELECT p.idProduto, p.nomeProduto, c.nomeCategoria, s.nomeSubCategoria, e.qtdDisponivel, e.precoAtual
                                   FROM[dbo].[Produtos] AS p INNER JOIN dbo.Estoque AS e 
-                                  ON p.idProduto = e.idProduto_fk AND p.status = 'Em Atividade'";
+                                  ON p.idProduto = e.idProduto_fk INNER JOIN dbo.SubCategorias AS s 
+                                  ON p.idSubCategoria_fk = s.idSubCategorias INNER JOIN dbo.Categorias AS c
+                                  ON s.idCategoria_fk = c.idCategoria AND p.status = 'Em Atividade'";
 
 
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -108,7 +119,6 @@ namespace AvaliacaoA1.View
                 retiradas.idFornecedor = Convert.ToInt32(txtIdFornecedor.Text);
                 retiradas.create(retiradas);
                 this.btnLimpar_Click(null, null);
-                MessageBox.Show("Remessa despachada com sucesso!");
                 this.CarregarDataGrid();
             }
             else
@@ -120,9 +130,19 @@ namespace AvaliacaoA1.View
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtQuantidadeRetirada.Text = "";
-            txtPesquisa.Text = "";
+            txtNomeProduto.Text = "";
             txtIdFornecedor.Text = "";
             txtNomeFantasia.Text = "";
+            txtIdProduto.Text = "";
+            foreach (DataGridViewRow check in dgProdutos_Retirada.Rows)
+            {
+                if ((bool)check.Cells[0].FormattedValue)
+                {
+                    check.Cells[0].Value = null;
+                }
+            }
+            this.CarregarDataGrid();
+
         }
 
 
@@ -138,7 +158,7 @@ namespace AvaliacaoA1.View
                 switch (coluna.Name)
                 {
                     case "idProduto":
-                        coluna.Width = 100;
+                        coluna.Width = 70;
                         coluna.HeaderText = "Código";
                         coluna.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         break;
@@ -147,18 +167,26 @@ namespace AvaliacaoA1.View
                         coluna.HeaderText = "Produto";
                         break;
                     case "qtdDisponivel":
-                        coluna.Width = 100;
+                        coluna.Width = 70;
                         coluna.HeaderText = "Quantidade Disponível";
                         coluna.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         break;
                     case "precoAtual":
-                        coluna.Width = 130;
+                        coluna.Width = 110;
                         coluna.HeaderText = "Preço Atual";
                         coluna.DefaultCellStyle.Format = "C2";
                         coluna.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         break;
                     case "selecionar":
+                        coluna.Width = 70;
+                        break;
+                    case "nomeSubCategoria":
                         coluna.Width = 100;
+                        coluna.HeaderText = "Sub-Categoria";
+                        break;
+                    case "nomeCategoria":
+                        coluna.Width = 100;
+                        coluna.HeaderText = "Categoria";
                         break;
                     default:
                         break;
@@ -193,6 +221,10 @@ namespace AvaliacaoA1.View
                 {
                     txtIdFornecedor.Text = dr[0].ToString();
                     txtNomeFantasia.Text = dr[1].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum Fornecedor encontrado");
                 }
                 conexao.Desconectar();
             }

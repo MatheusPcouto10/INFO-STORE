@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGerenciarUsuario));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -48,7 +49,6 @@
             this.btnPesquisa = new System.Windows.Forms.ToolStripButton();
             this.dgUsuarios = new System.Windows.Forms.DataGridView();
             this.editar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.usuariosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.telaEditar = new System.Windows.Forms.TabPage();
             this.txtNomeUsuario = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -75,6 +75,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnSalvarUsuario = new System.Windows.Forms.Button();
             this.cbStatus = new System.Windows.Forms.ComboBox();
+            this.usuariosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lojaInformaticaDataSetUsuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lojaInformaticaDataSetUsuariosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lojaInformaticaDataSetUsuariosBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -85,8 +86,8 @@
             this.telaPesquisa.SuspendLayout();
             this.fillByNomeToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource1)).BeginInit();
             this.telaEditar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lojaInformaticaDataSetUsuariosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lojaInformaticaDataSetUsuariosBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lojaInformaticaDataSetUsuariosBindingSource2)).BeginInit();
@@ -305,10 +306,6 @@
             this.editar.Name = "editar";
             this.editar.ReadOnly = true;
             this.editar.Width = 40;
-            // 
-            // usuariosBindingSource1
-            // 
-            this.usuariosBindingSource1.DataMember = "Usuarios";
             // 
             // telaEditar
             // 
@@ -652,6 +649,10 @@
             this.cbStatus.TabIndex = 33;
             this.cbStatus.Text = "Selecione...";
             // 
+            // usuariosBindingSource1
+            // 
+            this.usuariosBindingSource1.DataMember = "Usuarios";
+            // 
             // FormGerenciarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -664,6 +665,7 @@
             this.Controls.Add(this.tabControl1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FormGerenciarUsuario";
@@ -681,9 +683,9 @@
             this.fillByNomeToolStrip.ResumeLayout(false);
             this.fillByNomeToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource1)).EndInit();
             this.telaEditar.ResumeLayout(false);
             this.telaEditar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lojaInformaticaDataSetUsuariosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lojaInformaticaDataSetUsuariosBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lojaInformaticaDataSetUsuariosBindingSource2)).EndInit();

@@ -28,7 +28,6 @@ namespace AvaliacaoA1.View
                 subCategorias.idCategoria_fk = (int)cbCategorias.SelectedValue;
 
                 subCategorias.create(subCategorias);
-                MessageBox.Show("Sub-Categoria cadastrada com sucesso!");
             }
             else
             {
@@ -65,6 +64,21 @@ namespace AvaliacaoA1.View
         private void formCadastroSubCategoria_Load(object sender, EventArgs e)
         {
             this.preencheComboBoxCategorias();
+        }
+
+        private void formCadastroSubCategoria_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Enter:
+                    this.btnCadastrarSubCategoria_Click(null, null);
+                    break;
+                case Keys.Escape:
+                    this.Close();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

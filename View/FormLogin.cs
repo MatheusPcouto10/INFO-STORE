@@ -37,33 +37,15 @@ namespace AvaliacaoA1
                     FormMenu formMenu = new FormMenu();
                     FormCadastroEntradas formCadastroEntradas = new FormCadastroEntradas();
 
-                    string tipoUsuario = dr[5].ToString();
+                    UsuarioSession.tipoUsuario = dr[5].ToString();
+                    UsuarioSession.idUsuario = Convert.ToInt32(dr[0].ToString());
+                    UsuarioSession.nomeUsuario = dr[1].ToString().Substring(0, 9);
                     string statusUsuario = dr[6].ToString();
 
                     if (statusUsuario.Equals("Ativo"))
                     {
-                        if (tipoUsuario.Equals("Funcionário"))
-                        {
-                            formMenu.linkCadastroUsuario.Enabled = false;
-                            formMenu.linkGerenciarUsuarios.Enabled = false;
-                            formMenu.btnFormCadastroSubCategoria.Enabled = false;
-                            formMenu.Show();
-                            this.Hide();
-                            formMenu.labelUsuarioLogado.Text = dr[1].ToString().Substring(0,9);
-                            formMenu.labelTipoUsuarioLogado.Text = dr[5].ToString();
-                            formMenu.labelIdUsuarioLogado.Text = dr[0].ToString();
-                            UsuarioSession.idUsuario = Convert.ToInt32(dr[0].ToString());
-
-                        }
-                        else if (tipoUsuario.Equals("Administrador"))
-                        {
-                            formMenu.Show();
-                            this.Hide();
-                            formMenu.labelUsuarioLogado.Text = dr[1].ToString().Substring(0,9);
-                            formMenu.labelTipoUsuarioLogado.Text = dr[5].ToString();
-                            formMenu.labelIdUsuarioLogado.Text = dr[0].ToString();
-                            UsuarioSession.idUsuario = Convert.ToInt32(dr[0].ToString());
-                        }
+                        formMenu.Show();
+                        this.Hide();
                     }
                     else
                     {
@@ -94,6 +76,20 @@ namespace AvaliacaoA1
             Application.Exit();
         }
 
+        private void FormLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Enter:
+                    this.btnEntrar_Click(null, null);
+                    break;
+                case Keys.Escape:
+                    Application.Exit();
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
 

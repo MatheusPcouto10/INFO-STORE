@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadastroFornecedor));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -340,7 +341,7 @@
             this.btnCadastrarFornecedor.FlatAppearance.BorderSize = 2;
             this.btnCadastrarFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrarFornecedor.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCadastrarFornecedor.Location = new System.Drawing.Point(276, 475);
+            this.btnCadastrarFornecedor.Location = new System.Drawing.Point(307, 475);
             this.btnCadastrarFornecedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCadastrarFornecedor.Name = "btnCadastrarFornecedor";
             this.btnCadastrarFornecedor.Size = new System.Drawing.Size(168, 38);
@@ -357,7 +358,7 @@
             this.btnLimpar.FlatAppearance.BorderSize = 2;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLimpar.Location = new System.Drawing.Point(523, 475);
+            this.btnLimpar.Location = new System.Drawing.Point(488, 475);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(125, 38);
@@ -395,6 +396,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FormCadastroFornecedor";

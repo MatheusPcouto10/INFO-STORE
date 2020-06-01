@@ -46,6 +46,7 @@ namespace AvaliacaoA1.Model
                 cmd.Connection = conexao.Conectar();
                 cmd.ExecuteNonQuery();
                 conexao.Desconectar();
+                MessageBox.Show("Remessa despachada com sucesso!");
             }
             catch (Exception ex)
             {
@@ -77,6 +78,7 @@ namespace AvaliacaoA1.Model
                 cmd.Connection = conexao.Conectar();
                 cmd.ExecuteNonQuery();
                 conexao.Desconectar();
+                MessageBox.Show("Remessa alterada com sucesso!");
             }
             catch (Exception ex)
             {

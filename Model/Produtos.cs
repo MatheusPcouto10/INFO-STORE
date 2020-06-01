@@ -39,6 +39,7 @@ namespace AvaliacaoA1
                 cmd.Connection = conexao.Conectar();
                 cmd.ExecuteNonQuery();
                 conexao.Desconectar();
+                MessageBox.Show("Produto cadastrado com sucesso!");
             }
             catch (Exception ex)
             {

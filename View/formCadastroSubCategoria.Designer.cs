@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formCadastroSubCategoria));
             this.labelNomeProduto = new System.Windows.Forms.Label();
             this.txtNomeSubCategoria = new System.Windows.Forms.TextBox();
             this.cbCategorias = new System.Windows.Forms.ComboBox();
@@ -104,11 +105,15 @@
             this.Controls.Add(this.labelNomeProduto);
             this.Controls.Add(this.txtNomeSubCategoria);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "formCadastroSubCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Sub-Categoria";
             this.Load += new System.EventHandler(this.formCadastroSubCategoria_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.formCadastroSubCategoria_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

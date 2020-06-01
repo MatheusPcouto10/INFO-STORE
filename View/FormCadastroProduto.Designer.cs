@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cbCategoriaComputador = new System.Windows.Forms.ComboBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadastroProduto));
+            this.cbCategorias = new System.Windows.Forms.ComboBox();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnSalvarUsuario = new System.Windows.Forms.Button();
             this.txtImagemProduto = new System.Windows.Forms.TextBox();
@@ -40,11 +41,7 @@
             this.btnPesquisaImagem = new System.Windows.Forms.Button();
             this.pbImagemProduto = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbCategoriaConsoles = new System.Windows.Forms.ComboBox();
-            this.cbCategoriaCelular = new System.Windows.Forms.ComboBox();
-            this.rbConsoles = new System.Windows.Forms.RadioButton();
-            this.rbCelular = new System.Windows.Forms.RadioButton();
-            this.rbComputador = new System.Windows.Forms.RadioButton();
+            this.cbSubCategorias = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -58,18 +55,18 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cbCategoriaComputador
+            // cbCategorias
             // 
-            this.cbCategoriaComputador.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cbCategoriaComputador.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCategoriaComputador.FormattingEnabled = true;
-            this.cbCategoriaComputador.Location = new System.Drawing.Point(195, 39);
-            this.cbCategoriaComputador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbCategoriaComputador.Name = "cbCategoriaComputador";
-            this.cbCategoriaComputador.Size = new System.Drawing.Size(169, 29);
-            this.cbCategoriaComputador.TabIndex = 31;
-            this.cbCategoriaComputador.Text = "Selecione...";
-            this.cbCategoriaComputador.SelectedIndexChanged += new System.EventHandler(this.cbCategoriaComputador_SelectedIndexChanged);
+            this.cbCategorias.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cbCategorias.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCategorias.FormattingEnabled = true;
+            this.cbCategorias.Location = new System.Drawing.Point(6, 45);
+            this.cbCategorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbCategorias.Name = "cbCategorias";
+            this.cbCategorias.Size = new System.Drawing.Size(169, 29);
+            this.cbCategorias.TabIndex = 31;
+            this.cbCategorias.Text = "Selecione...";
+            this.cbCategorias.SelectedIndexChanged += new System.EventHandler(this.cbCategorias_SelectedIndexChanged);
             // 
             // btnLimpar
             // 
@@ -78,7 +75,7 @@
             this.btnLimpar.FlatAppearance.BorderSize = 2;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLimpar.Location = new System.Drawing.Point(553, 473);
+            this.btnLimpar.Location = new System.Drawing.Point(521, 473);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(120, 38);
@@ -94,7 +91,7 @@
             this.btnSalvarUsuario.FlatAppearance.BorderSize = 2;
             this.btnSalvarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvarUsuario.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSalvarUsuario.Location = new System.Drawing.Point(341, 473);
+            this.btnSalvarUsuario.Location = new System.Drawing.Point(316, 473);
             this.btnSalvarUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalvarUsuario.Name = "btnSalvarUsuario";
             this.btnSalvarUsuario.Size = new System.Drawing.Size(165, 38);
@@ -107,7 +104,7 @@
             // 
             this.txtImagemProduto.Enabled = false;
             this.txtImagemProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtImagemProduto.Location = new System.Drawing.Point(675, 129);
+            this.txtImagemProduto.Location = new System.Drawing.Point(586, 129);
             this.txtImagemProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtImagemProduto.Name = "txtImagemProduto";
             this.txtImagemProduto.Size = new System.Drawing.Size(217, 30);
@@ -117,7 +114,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(669, 402);
+            this.label5.Location = new System.Drawing.Point(85, 400);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 29);
             this.label5.TabIndex = 24;
@@ -127,7 +124,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(111, 181);
+            this.label3.Location = new System.Drawing.Point(85, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 29);
             this.label3.TabIndex = 22;
@@ -136,7 +133,7 @@
             // txtDescricaoProduto
             // 
             this.txtDescricaoProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtDescricaoProduto.Location = new System.Drawing.Point(116, 228);
+            this.txtDescricaoProduto.Location = new System.Drawing.Point(90, 228);
             this.txtDescricaoProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDescricaoProduto.Name = "txtDescricaoProduto";
             this.txtDescricaoProduto.Size = new System.Drawing.Size(389, 30);
@@ -146,7 +143,7 @@
             // 
             this.labelNomeProduto.AutoSize = true;
             this.labelNomeProduto.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Bold);
-            this.labelNomeProduto.Location = new System.Drawing.Point(109, 82);
+            this.labelNomeProduto.Location = new System.Drawing.Point(83, 82);
             this.labelNomeProduto.Name = "labelNomeProduto";
             this.labelNomeProduto.Size = new System.Drawing.Size(78, 29);
             this.labelNomeProduto.TabIndex = 20;
@@ -155,7 +152,7 @@
             // txtNomeProduto
             // 
             this.txtNomeProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtNomeProduto.Location = new System.Drawing.Point(115, 129);
+            this.txtNomeProduto.Location = new System.Drawing.Point(89, 129);
             this.txtNomeProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNomeProduto.Name = "txtNomeProduto";
             this.txtNomeProduto.Size = new System.Drawing.Size(391, 30);
@@ -170,7 +167,7 @@
             this.btnPesquisaImagem.FlatAppearance.BorderSize = 2;
             this.btnPesquisaImagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesquisaImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnPesquisaImagem.Location = new System.Drawing.Point(897, 129);
+            this.btnPesquisaImagem.Location = new System.Drawing.Point(808, 129);
             this.btnPesquisaImagem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPesquisaImagem.Name = "btnPesquisaImagem";
             this.btnPesquisaImagem.Size = new System.Drawing.Size(51, 30);
@@ -183,7 +180,7 @@
             this.pbImagemProduto.BackColor = System.Drawing.Color.Black;
             this.pbImagemProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbImagemProduto.Image = global::AvaliacaoA1.Properties.Resources.Adobe_Post_20200416_0902470_8175506600410369;
-            this.pbImagemProduto.Location = new System.Drawing.Point(675, 181);
+            this.pbImagemProduto.Location = new System.Drawing.Point(585, 181);
             this.pbImagemProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbImagemProduto.Name = "pbImagemProduto";
             this.pbImagemProduto.Size = new System.Drawing.Size(273, 183);
@@ -193,95 +190,35 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cbCategoriaConsoles);
-            this.groupBox1.Controls.Add(this.cbCategoriaCelular);
-            this.groupBox1.Controls.Add(this.rbConsoles);
-            this.groupBox1.Controls.Add(this.rbCelular);
-            this.groupBox1.Controls.Add(this.rbComputador);
-            this.groupBox1.Controls.Add(this.cbCategoriaComputador);
+            this.groupBox1.Controls.Add(this.cbSubCategorias);
+            this.groupBox1.Controls.Add(this.cbCategorias);
             this.groupBox1.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(115, 281);
+            this.groupBox1.Location = new System.Drawing.Point(89, 281);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(392, 166);
+            this.groupBox1.Size = new System.Drawing.Size(392, 107);
             this.groupBox1.TabIndex = 36;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Categorias";
             // 
-            // cbCategoriaConsoles
+            // cbSubCategorias
             // 
-            this.cbCategoriaConsoles.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cbCategoriaConsoles.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCategoriaConsoles.FormattingEnabled = true;
-            this.cbCategoriaConsoles.Location = new System.Drawing.Point(195, 111);
-            this.cbCategoriaConsoles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbCategoriaConsoles.Name = "cbCategoriaConsoles";
-            this.cbCategoriaConsoles.Size = new System.Drawing.Size(169, 29);
-            this.cbCategoriaConsoles.TabIndex = 38;
-            this.cbCategoriaConsoles.Text = "Selecione...";
-            this.cbCategoriaConsoles.SelectedIndexChanged += new System.EventHandler(this.cbCategoriaConsoles_SelectedIndexChanged);
-            // 
-            // cbCategoriaCelular
-            // 
-            this.cbCategoriaCelular.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cbCategoriaCelular.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCategoriaCelular.FormattingEnabled = true;
-            this.cbCategoriaCelular.Location = new System.Drawing.Point(195, 75);
-            this.cbCategoriaCelular.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbCategoriaCelular.Name = "cbCategoriaCelular";
-            this.cbCategoriaCelular.Size = new System.Drawing.Size(169, 29);
-            this.cbCategoriaCelular.TabIndex = 38;
-            this.cbCategoriaCelular.Text = "Selecione...";
-            this.cbCategoriaCelular.SelectedIndexChanged += new System.EventHandler(this.cbCategoriaCelular_SelectedIndexChanged);
-            // 
-            // rbConsoles
-            // 
-            this.rbConsoles.AutoSize = true;
-            this.rbConsoles.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbConsoles.Location = new System.Drawing.Point(19, 110);
-            this.rbConsoles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rbConsoles.Name = "rbConsoles";
-            this.rbConsoles.Size = new System.Drawing.Size(90, 28);
-            this.rbConsoles.TabIndex = 32;
-            this.rbConsoles.TabStop = true;
-            this.rbConsoles.Text = "Consoles";
-            this.rbConsoles.UseVisualStyleBackColor = true;
-            this.rbConsoles.CheckedChanged += new System.EventHandler(this.rbConsoles_CheckedChanged);
-            // 
-            // rbCelular
-            // 
-            this.rbCelular.AutoSize = true;
-            this.rbCelular.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbCelular.Location = new System.Drawing.Point(19, 74);
-            this.rbCelular.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rbCelular.Name = "rbCelular";
-            this.rbCelular.Size = new System.Drawing.Size(94, 28);
-            this.rbCelular.TabIndex = 1;
-            this.rbCelular.TabStop = true;
-            this.rbCelular.Text = "Celulares";
-            this.rbCelular.UseVisualStyleBackColor = true;
-            this.rbCelular.CheckedChanged += new System.EventHandler(this.rbCelular_CheckedChanged);
-            // 
-            // rbComputador
-            // 
-            this.rbComputador.AutoSize = true;
-            this.rbComputador.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbComputador.Location = new System.Drawing.Point(19, 39);
-            this.rbComputador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rbComputador.Name = "rbComputador";
-            this.rbComputador.Size = new System.Drawing.Size(59, 28);
-            this.rbComputador.TabIndex = 0;
-            this.rbComputador.TabStop = true;
-            this.rbComputador.Text = "PC´s";
-            this.rbComputador.UseVisualStyleBackColor = true;
-            this.rbComputador.CheckedChanged += new System.EventHandler(this.rbComputador_CheckedChanged);
+            this.cbSubCategorias.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cbSubCategorias.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSubCategorias.FormattingEnabled = true;
+            this.cbSubCategorias.Location = new System.Drawing.Point(195, 45);
+            this.cbSubCategorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbSubCategorias.Name = "cbSubCategorias";
+            this.cbSubCategorias.Size = new System.Drawing.Size(169, 29);
+            this.cbSubCategorias.TabIndex = 38;
+            this.cbSubCategorias.Text = "Selecione...";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(669, 82);
+            this.label4.Location = new System.Drawing.Point(580, 82);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 29);
             this.label4.TabIndex = 37;
@@ -290,7 +227,7 @@
             // txtPreco
             // 
             this.txtPreco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtPreco.Location = new System.Drawing.Point(788, 399);
+            this.txtPreco.Location = new System.Drawing.Point(152, 401);
             this.txtPreco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.Size = new System.Drawing.Size(160, 30);
@@ -304,7 +241,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1053, 59);
+            this.panel1.Size = new System.Drawing.Size(928, 59);
             this.panel1.TabIndex = 39;
             // 
             // label2
@@ -312,7 +249,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label2.Location = new System.Drawing.Point(387, 9);
+            this.label2.Location = new System.Drawing.Point(344, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(258, 40);
             this.label2.TabIndex = 3;
@@ -327,7 +264,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 535);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1053, 59);
+            this.panel2.Size = new System.Drawing.Size(928, 59);
             this.panel2.TabIndex = 44;
             // 
             // label1
@@ -335,7 +272,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label1.Location = new System.Drawing.Point(461, 17);
+            this.label1.Location = new System.Drawing.Point(412, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 34);
             this.label1.TabIndex = 21;
@@ -363,7 +300,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1053, 594);
+            this.ClientSize = new System.Drawing.Size(928, 594);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtPreco);
@@ -379,6 +316,7 @@
             this.Controls.Add(this.txtDescricaoProduto);
             this.Controls.Add(this.labelNomeProduto);
             this.Controls.Add(this.txtNomeProduto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormCadastroProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -386,7 +324,6 @@
             this.Load += new System.EventHandler(this.FormCadastroProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbImagemProduto)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -397,7 +334,7 @@
         }
 
         #endregion
-        public System.Windows.Forms.ComboBox cbCategoriaComputador;
+        public System.Windows.Forms.ComboBox cbCategorias;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnSalvarUsuario;
         public System.Windows.Forms.TextBox txtImagemProduto;
@@ -409,12 +346,8 @@
         private System.Windows.Forms.Button btnPesquisaImagem;
         private System.Windows.Forms.PictureBox pbImagemProduto;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton rbConsoles;
-        private System.Windows.Forms.RadioButton rbCelular;
-        private System.Windows.Forms.RadioButton rbComputador;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.ComboBox cbCategoriaConsoles;
-        public System.Windows.Forms.ComboBox cbCategoriaCelular;
+        public System.Windows.Forms.ComboBox cbSubCategorias;
         public System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;

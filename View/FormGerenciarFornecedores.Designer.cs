@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGerenciarFornecedores));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -42,7 +43,6 @@
             this.btnPesquisa = new System.Windows.Forms.ToolStripButton();
             this.dgFornecedores = new System.Windows.Forms.DataGridView();
             this.editar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.fornecedoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.telaEditar = new System.Windows.Forms.TabPage();
             this.txtNomeFornecedor = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -65,14 +65,15 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtTelefoneFornecedor = new System.Windows.Forms.MaskedTextBox();
             this.btnSalvarFornecedor = new System.Windows.Forms.Button();
+            this.fornecedoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.telaPesquisa.SuspendLayout();
             this.fillByNomeToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgFornecedores)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fornecedoresBindingSource)).BeginInit();
             this.telaEditar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fornecedoresBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -92,7 +93,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label2.Location = new System.Drawing.Point(429, 12);
+            this.label2.Location = new System.Drawing.Point(450, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(307, 40);
             this.label2.TabIndex = 3;
@@ -116,7 +117,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label3.Location = new System.Drawing.Point(518, 13);
+            this.label3.Location = new System.Drawing.Point(542, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 34);
             this.label3.TabIndex = 21;
@@ -141,6 +142,9 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.telaPesquisa);
             this.tabControl1.Controls.Add(this.telaEditar);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -167,6 +171,7 @@
             // 
             // fillByNomeToolStrip
             // 
+            this.fillByNomeToolStrip.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.fillByNomeToolStrip.BackColor = System.Drawing.SystemColors.Control;
             this.fillByNomeToolStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.fillByNomeToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
@@ -175,7 +180,7 @@
             this.toolStripLabel1,
             this.txtPesquisa,
             this.btnPesquisa});
-            this.fillByNomeToolStrip.Location = new System.Drawing.Point(388, 71);
+            this.fillByNomeToolStrip.Location = new System.Drawing.Point(435, 75);
             this.fillByNomeToolStrip.Name = "fillByNomeToolStrip";
             this.fillByNomeToolStrip.Size = new System.Drawing.Size(320, 27);
             this.fillByNomeToolStrip.TabIndex = 6;
@@ -213,6 +218,9 @@
             this.dgFornecedores.AllowUserToAddRows = false;
             this.dgFornecedores.AllowUserToDeleteRows = false;
             this.dgFornecedores.AllowUserToOrderColumns = true;
+            this.dgFornecedores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgFornecedores.BackgroundColor = System.Drawing.Color.Black;
             this.dgFornecedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgFornecedores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -238,11 +246,8 @@
             this.editar.MinimumWidth = 6;
             this.editar.Name = "editar";
             this.editar.ReadOnly = true;
-            this.editar.Width = 40;
-            // 
-            // fornecedoresBindingSource
-            // 
-            this.fornecedoresBindingSource.DataMember = "Fornecedores";
+            this.editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.editar.Width = 1099;
             // 
             // telaEditar
             // 
@@ -279,8 +284,7 @@
             // 
             // txtNomeFornecedor
             // 
-            this.txtNomeFornecedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtNomeFornecedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNomeFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeFornecedor.Location = new System.Drawing.Point(247, 82);
             this.txtNomeFornecedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -290,6 +294,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(656, 272);
@@ -300,8 +305,7 @@
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(243, 50);
@@ -312,6 +316,7 @@
             // 
             // cbStatus
             // 
+            this.cbStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbStatus.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cbStatus.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbStatus.FormattingEnabled = true;
@@ -327,8 +332,7 @@
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(243, 124);
@@ -339,8 +343,7 @@
             // 
             // txtNomeFantasia
             // 
-            this.txtNomeFantasia.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtNomeFantasia.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNomeFantasia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeFantasia.Location = new System.Drawing.Point(247, 156);
             this.txtNomeFantasia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -350,8 +353,7 @@
             // 
             // txtLoteFornecedor
             // 
-            this.txtLoteFornecedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLoteFornecedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLoteFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLoteFornecedor.Location = new System.Drawing.Point(871, 230);
             this.txtLoteFornecedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -361,8 +363,7 @@
             // 
             // label12
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(867, 198);
@@ -373,8 +374,7 @@
             // 
             // txtQuadraFornecedor
             // 
-            this.txtQuadraFornecedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtQuadraFornecedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtQuadraFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuadraFornecedor.Location = new System.Drawing.Point(661, 156);
             this.txtQuadraFornecedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -384,8 +384,7 @@
             // 
             // label13
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(657, 124);
@@ -396,19 +395,17 @@
             // 
             // txtAlamedaFornecedor
             // 
-            this.txtAlamedaFornecedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAlamedaFornecedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtAlamedaFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAlamedaFornecedor.Location = new System.Drawing.Point(660, 230);
             this.txtAlamedaFornecedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAlamedaFornecedor.Name = "txtAlamedaFornecedor";
-            this.txtAlamedaFornecedor.Size = new System.Drawing.Size(127, 26);
+            this.txtAlamedaFornecedor.Size = new System.Drawing.Size(155, 26);
             this.txtAlamedaFornecedor.TabIndex = 80;
             // 
             // label10
             // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(656, 198);
@@ -419,8 +416,7 @@
             // 
             // label11
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(657, 50);
@@ -431,8 +427,7 @@
             // 
             // txtBairroFornecedor
             // 
-            this.txtBairroFornecedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBairroFornecedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBairroFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBairroFornecedor.Location = new System.Drawing.Point(661, 82);
             this.txtBairroFornecedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -442,8 +437,7 @@
             // 
             // txtCnpj
             // 
-            this.txtCnpj.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCnpj.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCnpj.Location = new System.Drawing.Point(247, 304);
             this.txtCnpj.Margin = new System.Windows.Forms.Padding(4);
@@ -455,8 +449,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(243, 272);
@@ -467,8 +460,7 @@
             // 
             // txtEmailFornecedor
             // 
-            this.txtEmailFornecedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtEmailFornecedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmailFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailFornecedor.Location = new System.Drawing.Point(247, 230);
             this.txtEmailFornecedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -478,8 +470,7 @@
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(243, 198);
@@ -490,8 +481,7 @@
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(445, 272);
@@ -502,8 +492,7 @@
             // 
             // txtTelefoneFornecedor
             // 
-            this.txtTelefoneFornecedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTelefoneFornecedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTelefoneFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefoneFornecedor.Location = new System.Drawing.Point(448, 304);
             this.txtTelefoneFornecedor.Margin = new System.Windows.Forms.Padding(4);
@@ -515,6 +504,7 @@
             // 
             // btnSalvarFornecedor
             // 
+            this.btnSalvarFornecedor.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnSalvarFornecedor.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnSalvarFornecedor.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSalvarFornecedor.FlatAppearance.BorderSize = 2;
@@ -529,6 +519,10 @@
             this.btnSalvarFornecedor.UseVisualStyleBackColor = false;
             this.btnSalvarFornecedor.Click += new System.EventHandler(this.btnSalvarFornecedor_Click);
             // 
+            // fornecedoresBindingSource
+            // 
+            this.fornecedoresBindingSource.DataMember = "Fornecedores";
+            // 
             // FormGerenciarFornecedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -538,7 +532,11 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1199, 641);
             this.Name = "FormGerenciarFornecedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerenciar Fornecedores";
@@ -553,9 +551,9 @@
             this.fillByNomeToolStrip.ResumeLayout(false);
             this.fillByNomeToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgFornecedores)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fornecedoresBindingSource)).EndInit();
             this.telaEditar.ResumeLayout(false);
             this.telaEditar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fornecedoresBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -606,8 +604,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn alameda;
         private System.Windows.Forms.DataGridViewTextBoxColumn lote;
         private System.Windows.Forms.DataGridViewTextBoxColumn status;
-        private System.Windows.Forms.DataGridViewImageColumn editar;
         private System.Windows.Forms.TextBox txtNomeFornecedor;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridViewImageColumn editar;
     }
 }

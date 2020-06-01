@@ -1,6 +1,6 @@
 ﻿namespace AvaliacaoA1
 {
-    partial class CadastroUsuario
+    partial class FormCadastroUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadastroUsuario));
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnCadastrarUsuario = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -73,10 +74,10 @@
             this.btnLimpar.FlatAppearance.BorderSize = 2;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(463, 478);
+            this.btnLimpar.Location = new System.Drawing.Point(485, 478);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(103, 36);
+            this.btnLimpar.Size = new System.Drawing.Size(125, 38);
             this.btnLimpar.TabIndex = 15;
             this.btnLimpar.Text = "LIMPAR";
             this.btnLimpar.UseVisualStyleBackColor = false;
@@ -90,10 +91,10 @@
             this.btnCadastrarUsuario.FlatAppearance.BorderSize = 2;
             this.btnCadastrarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrarUsuario.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarUsuario.Location = new System.Drawing.Point(308, 478);
+            this.btnCadastrarUsuario.Location = new System.Drawing.Point(303, 478);
             this.btnCadastrarUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastrarUsuario.Name = "btnCadastrarUsuario";
-            this.btnCadastrarUsuario.Size = new System.Drawing.Size(133, 36);
+            this.btnCadastrarUsuario.Size = new System.Drawing.Size(168, 38);
             this.btnCadastrarUsuario.TabIndex = 14;
             this.btnCadastrarUsuario.Text = "CADASTRAR";
             this.btnCadastrarUsuario.UseVisualStyleBackColor = false;
@@ -417,11 +418,11 @@
             this.dtNascimento.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dtNascimento.CalendarFont = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtNascimento.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtNascimento.Location = new System.Drawing.Point(541, 403);
             this.dtNascimento.Name = "dtNascimento";
-            this.dtNascimento.Size = new System.Drawing.Size(175, 29);
+            this.dtNascimento.Size = new System.Drawing.Size(175, 24);
             this.dtNascimento.TabIndex = 50;
             // 
             // txtTelefoneUsuario
@@ -496,7 +497,7 @@
             this.panel3.Size = new System.Drawing.Size(928, 594);
             this.panel3.TabIndex = 60;
             // 
-            // CadastroUsuario
+            // FormCadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -508,9 +509,10 @@
             this.Controls.Add(this.panel3);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.Name = "CadastroUsuario";
+            this.Name = "FormCadastroUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Usuário";
             this.panel1.ResumeLayout(false);

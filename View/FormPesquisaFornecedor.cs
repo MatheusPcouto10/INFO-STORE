@@ -241,5 +241,20 @@ namespace AvaliacaoA1.View
                 }
             }
         }
+
+        private void FormPesquisaFornecedor_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Enter:
+                    this.btnPesquisarFornecedor_Click(null, null);
+                    break;
+                case Keys.Escape:
+                    this.Hide();
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

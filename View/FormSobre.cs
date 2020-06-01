@@ -26,5 +26,17 @@ namespace AvaliacaoA1.View
         {
             System.Diagnostics.Process.Start("https://www.linkedin.com/in/matheus-pimentel-do-couto-a68571185/");
         }
+
+        private void FormSobre_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Escape:
+                    this.Close();
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

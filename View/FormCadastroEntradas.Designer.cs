@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadastroEntradas));
             this.dtDataEntrada = new System.Windows.Forms.DateTimePicker();
             this.labelNomeProduto = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,7 +55,7 @@
             this.txtIdProduto = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnFormPesquisaFornecedor = new System.Windows.Forms.Button();
-            this.btnPesquisa = new System.Windows.Forms.Button();
+            this.btnFormPesquisa_Produto = new System.Windows.Forms.Button();
             this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lojaInformaticaDataSetProdutosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lojaInformaticaDataSetProdutosEntradasBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -78,12 +79,12 @@
             // 
             this.dtDataEntrada.CalendarFont = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtDataEntrada.CalendarMonthBackground = System.Drawing.SystemColors.ScrollBar;
-            this.dtDataEntrada.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtDataEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtDataEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtDataEntrada.Location = new System.Drawing.Point(621, 106);
             this.dtDataEntrada.Margin = new System.Windows.Forms.Padding(4);
             this.dtDataEntrada.Name = "dtDataEntrada";
-            this.dtDataEntrada.Size = new System.Drawing.Size(240, 29);
+            this.dtDataEntrada.Size = new System.Drawing.Size(240, 24);
             this.dtDataEntrada.TabIndex = 5;
             // 
             // labelNomeProduto
@@ -119,7 +120,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(946, 198);
+            this.label4.Location = new System.Drawing.Point(1069, 198);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 21);
             this.label4.TabIndex = 25;
@@ -152,7 +153,7 @@
             this.btnLimpar.FlatAppearance.BorderSize = 2;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(569, 475);
+            this.btnLimpar.Location = new System.Drawing.Point(631, 475);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(136, 38);
@@ -168,7 +169,7 @@
             this.btnAdicionarEntrada.FlatAppearance.BorderSize = 2;
             this.btnAdicionarEntrada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdicionarEntrada.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdicionarEntrada.Location = new System.Drawing.Point(304, 475);
+            this.btnAdicionarEntrada.Location = new System.Drawing.Point(385, 475);
             this.btnAdicionarEntrada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdicionarEntrada.Name = "btnAdicionarEntrada";
             this.btnAdicionarEntrada.Size = new System.Drawing.Size(240, 38);
@@ -189,7 +190,7 @@
             this.dgProdutos_Entrada.Name = "dgProdutos_Entrada";
             this.dgProdutos_Entrada.RowHeadersWidth = 51;
             this.dgProdutos_Entrada.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgProdutos_Entrada.Size = new System.Drawing.Size(952, 246);
+            this.dgProdutos_Entrada.Size = new System.Drawing.Size(1075, 246);
             this.dgProdutos_Entrada.TabIndex = 33;
             this.dgProdutos_Entrada.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgProdutos_Entrada_DataBindingComplete);
             // 
@@ -227,7 +228,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1053, 59);
+            this.panel1.Size = new System.Drawing.Size(1181, 59);
             this.panel1.TabIndex = 40;
             // 
             // label2
@@ -235,7 +236,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label2.Location = new System.Drawing.Point(407, 9);
+            this.label2.Location = new System.Drawing.Point(469, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(263, 40);
             this.label2.TabIndex = 3;
@@ -250,7 +251,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 535);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1053, 59);
+            this.panel2.Size = new System.Drawing.Size(1181, 59);
             this.panel2.TabIndex = 45;
             // 
             // label3
@@ -258,7 +259,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label3.Location = new System.Drawing.Point(473, 16);
+            this.label3.Location = new System.Drawing.Point(543, 16);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 34);
             this.label3.TabIndex = 21;
@@ -328,7 +329,6 @@
             this.txtIdProduto.Name = "txtIdProduto";
             this.txtIdProduto.Size = new System.Drawing.Size(157, 26);
             this.txtIdProduto.TabIndex = 51;
-            this.txtIdProduto.TextChanged += new System.EventHandler(this.txtIdProduto_TextChanged);
             // 
             // label9
             // 
@@ -358,22 +358,22 @@
             this.btnFormPesquisaFornecedor.UseVisualStyleBackColor = false;
             this.btnFormPesquisaFornecedor.Click += new System.EventHandler(this.btnFormPesquisaFornecedor_Click);
             // 
-            // btnPesquisa
+            // btnFormPesquisa_Produto
             // 
-            this.btnPesquisa.BackColor = System.Drawing.Color.LawnGreen;
-            this.btnPesquisa.BackgroundImage = global::AvaliacaoA1.Properties.Resources.searchmagnifierinterfacesymbol1_79893;
-            this.btnPesquisa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPesquisa.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnPesquisa.FlatAppearance.BorderSize = 2;
-            this.btnPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnPesquisa.Location = new System.Drawing.Point(219, 174);
-            this.btnPesquisa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPesquisa.Name = "btnPesquisa";
-            this.btnPesquisa.Size = new System.Drawing.Size(63, 27);
-            this.btnPesquisa.TabIndex = 36;
-            this.btnPesquisa.UseVisualStyleBackColor = false;
-            this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
+            this.btnFormPesquisa_Produto.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnFormPesquisa_Produto.BackgroundImage = global::AvaliacaoA1.Properties.Resources.searchmagnifierinterfacesymbol1_79893;
+            this.btnFormPesquisa_Produto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnFormPesquisa_Produto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnFormPesquisa_Produto.FlatAppearance.BorderSize = 2;
+            this.btnFormPesquisa_Produto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormPesquisa_Produto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnFormPesquisa_Produto.Location = new System.Drawing.Point(219, 174);
+            this.btnFormPesquisa_Produto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFormPesquisa_Produto.Name = "btnFormPesquisa_Produto";
+            this.btnFormPesquisa_Produto.Size = new System.Drawing.Size(63, 27);
+            this.btnFormPesquisa_Produto.TabIndex = 36;
+            this.btnFormPesquisa_Produto.UseVisualStyleBackColor = false;
+            this.btnFormPesquisa_Produto.Click += new System.EventHandler(this.btnFormPesquisa_Produto_Click);
             // 
             // usuariosBindingSource
             // 
@@ -388,7 +388,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1053, 594);
+            this.ClientSize = new System.Drawing.Size(1181, 594);
             this.Controls.Add(this.txtIdProduto);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtIdFornecedor);
@@ -398,7 +398,7 @@
             this.Controls.Add(this.txtNomeFantasia);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnPesquisa);
+            this.Controls.Add(this.btnFormPesquisa_Produto);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtNomeProduto);
             this.Controls.Add(this.dgProdutos_Entrada);
@@ -411,7 +411,10 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.labelNomeProduto);
             this.Controls.Add(this.dtDataEntrada);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "FormCadastroEntradas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Entradas";
@@ -454,7 +457,7 @@
         private System.Windows.Forms.DataGridView dgProdutos_Entrada;
         public System.Windows.Forms.TextBox txtNomeProduto;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnPesquisa;
+        private System.Windows.Forms.Button btnFormPesquisa_Produto;
         private System.Windows.Forms.DataGridViewCheckBoxColumn selecionar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
