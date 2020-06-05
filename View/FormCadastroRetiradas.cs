@@ -230,5 +230,31 @@ namespace AvaliacaoA1.View
             }
 
         }
+
+        private void FormCadastroRetiradas_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (txtIdFornecedor.Text != "")
+            {
+                switch (e.KeyCode)
+                {
+                    case Keys.Enter:
+                        this.btnFormPesquisaFornecedor_Click(null, null);
+                        break;
+                    default:
+                        break;
+                }
+            }
+            if (txtIdProduto.Text != "")
+            {
+                switch (e.KeyCode)
+                {
+                    case Keys.Enter:
+                        this.btnFormPesquisa_Produto_Click(null, null);
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
     }
 }

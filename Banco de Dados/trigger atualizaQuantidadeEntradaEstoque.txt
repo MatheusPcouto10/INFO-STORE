@@ -1,0 +1,26 @@
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE TRIGGER atualizaQuantidadeEntradaEstoque
+   ON  dbo.Entradas 
+   AFTER INSERT
+AS 
+BEGIN
+	declare @entrada int, @produto int, @precoEntrada decimal, @qtdEntrada int
+      set @entrada = (select max(idEntradas) from Entradas)
+
+	  set @produto = (select idProduto_fk from Entradas where idEntradas = @entrada)
+	  set @qtdEntrada = (select qtdEntrada from Entradas where idEntradas = @entrada)
+	  set @precoEntrada = (select precoEntrada from Entradas where idEntradas = @entrada)
+
+	  UPDATE dbo.Estoque set [precoAtual] = @precoEntrada,
+	                         [qtdDisponivel] += @qtdEntrada 
+		                     where idProduto_fk = @produto
+
+END
+GO

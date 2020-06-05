@@ -350,7 +350,7 @@
             this.btnFormPesquisa_Produto.Size = new System.Drawing.Size(63, 26);
             this.btnFormPesquisa_Produto.TabIndex = 47;
             this.btnFormPesquisa_Produto.UseVisualStyleBackColor = false;
-            this.btnFormPesquisa_Produto.Click += new System.EventHandler(this.btnPesquisa_Produtos_Click);
+            this.btnFormPesquisa_Produto.Click += new System.EventHandler(this.btnFormPesquisa_Produtos_Click);
             // 
             // label6
             // 
@@ -396,6 +396,7 @@
             // 
             // txtQuantidadeRetirada
             // 
+            this.txtQuantidadeRetirada.Enabled = false;
             this.txtQuantidadeRetirada.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuantidadeRetirada.Location = new System.Drawing.Point(622, 132);
             this.txtQuantidadeRetirada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -470,11 +471,13 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormHistoricoRetiradas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Histórico de Retiradas";
             this.Load += new System.EventHandler(this.FormHistoricoRetiradas_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormHistoricoRetiradas_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

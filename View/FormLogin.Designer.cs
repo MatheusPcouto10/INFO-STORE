@@ -36,6 +36,7 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.checkMostrarSenha = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,7 +89,7 @@
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.btnLimpar.ForeColor = System.Drawing.Color.LawnGreen;
-            this.btnLimpar.Location = new System.Drawing.Point(257, 383);
+            this.btnLimpar.Location = new System.Drawing.Point(256, 428);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(119, 38);
@@ -105,7 +106,7 @@
             this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEntrar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.ForeColor = System.Drawing.Color.Black;
-            this.btnEntrar.Location = new System.Drawing.Point(83, 383);
+            this.btnEntrar.Location = new System.Drawing.Point(82, 428);
             this.btnEntrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(125, 38);
@@ -126,12 +127,26 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // checkMostrarSenha
+            // 
+            this.checkMostrarSenha.AutoSize = true;
+            this.checkMostrarSenha.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkMostrarSenha.ForeColor = System.Drawing.Color.White;
+            this.checkMostrarSenha.Location = new System.Drawing.Point(113, 358);
+            this.checkMostrarSenha.Name = "checkMostrarSenha";
+            this.checkMostrarSenha.Size = new System.Drawing.Size(127, 22);
+            this.checkMostrarSenha.TabIndex = 18;
+            this.checkMostrarSenha.Text = "Mostrar senha";
+            this.checkMostrarSenha.UseVisualStyleBackColor = true;
+            this.checkMostrarSenha.CheckedChanged += new System.EventHandler(this.checkMostrarSenha_CheckedChanged);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(483, 453);
+            this.ClientSize = new System.Drawing.Size(483, 509);
+            this.Controls.Add(this.checkMostrarSenha);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.pictureBox1);
@@ -164,5 +179,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnEntrar;
+        private System.Windows.Forms.CheckBox checkMostrarSenha;
     }
 }

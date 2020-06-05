@@ -45,7 +45,7 @@ namespace AvaliacaoA1.View
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = conexao.Conectar();
 
-                    cmd.CommandText = @"SELECT p.idProduto, p.nomeProduto, s.nomeSubCategoria, 
+                    cmd.CommandText = @"SELECT p.idProduto, p.nomeProduto, c.nomeCategoria, s.nomeSubCategoria, 
                                            p.descricao, p.preco, p.imagem, p.status,
                                            e.qtdDisponivel, e.precoAtual
                                            FROM[dbo].[Produtos] AS p INNER JOIN dbo.Estoque AS e 
@@ -321,6 +321,20 @@ namespace AvaliacaoA1.View
         private void cbCategorias_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.preencheComboBoxSubCategorias();
+        }
+
+        private void FormEstoque_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            switch (e.KeyCode)
+            {
+                case Keys.Enter:
+                    this.btnPesquisa_Click(null, null);
+                    break;
+                default:
+                    break;
+            }
+
         }
     }
 }

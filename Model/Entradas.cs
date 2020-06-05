@@ -71,13 +71,14 @@ namespace AvaliacaoA1.Model
         {
             try
             {
+
                 cmd.CommandText = "UPDATE entradas SET idUsuario_fk = '" + UsuarioSession.idUsuario +
                                                    "', idProduto_fk = '" + t.idProduto +
                                                    "', dataEntrada = '" + t.dataEntrada +
                                                    "', qtdEntrada = '" + t.qtdEntrada +
                                                    "', precoEntrada = '" + t.precoEntrada +
                                                    "', idFornecedor_fk = '" + t.idFornecedor +
-                                                   "' WHERE idEntradas LIKE '" + idEntradas + "'";
+                                                   "' WHERE idEntradas = " + idEntradas;
 
                 cmd.Connection = conexao.Conectar();
                 cmd.ExecuteNonQuery();

@@ -43,11 +43,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F);
             this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(156, 209);
+            this.label2.Location = new System.Drawing.Point(149, 209);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 42);
+            this.label2.Size = new System.Drawing.Size(130, 36);
             this.label2.TabIndex = 7;
             this.label2.Text = "Sistema de controle \r\nde estoque.\r\n";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -66,11 +66,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label3.Location = new System.Drawing.Point(147, 268);
+            this.label3.Location = new System.Drawing.Point(132, 268);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 72);
+            this.label3.Size = new System.Drawing.Size(168, 72);
             this.label3.TabIndex = 10;
             this.label3.Text = "Matheus Pimentel Do Couto\r\nSistemas de Informação \r\nUNITINS - 2020\r\n\r\n";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -78,12 +78,12 @@
             // linkGithub
             // 
             this.linkGithub.AutoSize = true;
-            this.linkGithub.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkGithub.Font = new System.Drawing.Font("Bahnschrift", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkGithub.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.linkGithub.Location = new System.Drawing.Point(179, 359);
+            this.linkGithub.Location = new System.Drawing.Point(160, 360);
             this.linkGithub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkGithub.Name = "linkGithub";
-            this.linkGithub.Size = new System.Drawing.Size(88, 17);
+            this.linkGithub.Size = new System.Drawing.Size(119, 17);
             this.linkGithub.TabIndex = 11;
             this.linkGithub.TabStop = true;
             this.linkGithub.Text = "MatheusPcouto10";
@@ -92,11 +92,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label4.Location = new System.Drawing.Point(198, 340);
+            this.label4.Location = new System.Drawing.Point(191, 340);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 54);
+            this.label4.Size = new System.Drawing.Size(58, 54);
             this.label4.TabIndex = 12;
             this.label4.Text = "Github: \r\n\r\n\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -104,12 +104,12 @@
             // linkLinkedin
             // 
             this.linkLinkedin.AutoSize = true;
-            this.linkLinkedin.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLinkedin.Font = new System.Drawing.Font("Bahnschrift", 7.8F);
             this.linkLinkedin.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.linkLinkedin.Location = new System.Drawing.Point(119, 406);
+            this.linkLinkedin.Location = new System.Drawing.Point(80, 403);
             this.linkLinkedin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLinkedin.Name = "linkLinkedin";
-            this.linkLinkedin.Size = new System.Drawing.Size(198, 17);
+            this.linkLinkedin.Size = new System.Drawing.Size(268, 17);
             this.linkLinkedin.TabIndex = 13;
             this.linkLinkedin.TabStop = true;
             this.linkLinkedin.Text = "/matheus-pimentel-do-couto-a68571185\r\n";
@@ -118,11 +118,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Bahnschrift", 9F);
             this.label5.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label5.Location = new System.Drawing.Point(191, 385);
+            this.label5.Location = new System.Drawing.Point(181, 385);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 18);
+            this.label5.Size = new System.Drawing.Size(68, 18);
             this.label5.TabIndex = 14;
             this.label5.Text = "Linkedin:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

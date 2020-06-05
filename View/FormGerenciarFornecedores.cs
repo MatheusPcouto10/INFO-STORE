@@ -224,6 +224,19 @@ namespace AvaliacaoA1.View
             }
             conexao.Desconectar();
         }
+
+        private void FormGerenciarFornecedores_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            switch (e.KeyCode)
+            {
+                case Keys.Enter:
+                    this.btnPesquisa_Click(null, null);
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
 

@@ -269,6 +269,7 @@
             // 
             // txtPreco
             // 
+            this.txtPreco.Enabled = false;
             this.txtPreco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtPreco.Location = new System.Drawing.Point(181, 344);
             this.txtPreco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -469,12 +470,14 @@
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FormEstoque";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estoque";
             this.Load += new System.EventHandler(this.FormEstoque_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormEstoque_KeyDown);
             this.tabControl1.ResumeLayout(false);
             this.telaPesquisa.ResumeLayout(false);
             this.telaPesquisa.PerformLayout();

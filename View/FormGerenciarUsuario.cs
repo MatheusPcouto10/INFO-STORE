@@ -52,7 +52,7 @@ namespace AvaliacaoA1
                 usuario.Status = cbStatus.Text;
 
                 usuario.update(usuario, idUsuario);
-      
+
                 tabControl1.SelectedIndex = 0;
                 btnSalvarUsuario.Enabled = false;
                 this.CarregarDataGrid();
@@ -234,6 +234,19 @@ namespace AvaliacaoA1
                     default:
                         break;
                 }
+            }
+        }
+
+        private void FormGerenciarUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            switch (e.KeyCode)
+            {
+                case Keys.Enter:
+                    this.btnPesquisa_Click(null, null);
+                    break;
+                default:
+                    break;
             }
         }
     }

@@ -90,6 +90,18 @@ namespace AvaliacaoA1
                     break;
             }
         }
+
+        private void checkMostrarSenha_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkMostrarSenha.Checked)
+            {
+                txtSenha.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtSenha.UseSystemPasswordChar = true;
+            }
+        }
     }
 }
 

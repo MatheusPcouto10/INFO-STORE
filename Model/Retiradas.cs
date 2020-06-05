@@ -38,19 +38,37 @@ namespace AvaliacaoA1.Model
 
         public void create(Retiradas t)
         {
-            try
-            {
-                cmd.CommandText = "INSERT INTO retiradas(idUsuario_fk, idProduto_fk, dataRetirada, qtdRetirada, idFornecedor_fk) " +
-                                  "values('" + t.idUsuario + "', '" + t.idProduto + "', '"+ t.dataRetirada + "', '" + t.qtdRetirada + "', '" + t.idFornecedor + "')";
+            cmd.CommandText = @"SELECT qtdDisponivel FROM estoque WHERE idProduto_fk = " + t.idProduto;
 
-                cmd.Connection = conexao.Conectar();
-                cmd.ExecuteNonQuery();
-                conexao.Desconectar();
-                MessageBox.Show("Remessa despachada com sucesso!");
-            }
-            catch (Exception ex)
+            cmd.Connection = conexao.Conectar();
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            if (dr.Read())
             {
-                MessageBox.Show("Error " + ex);
+                string qtd0 = dr[0].ToString();
+                conexao.Desconectar();
+
+                if (qtd0.Equals("0"))
+                {
+                    MessageBox.Show("Quantidade disponível do produto é 0, não é possível retirar.");
+                }
+                else
+                {
+                    try
+                    {
+                        cmd.CommandText = "INSERT INTO retiradas(idUsuario_fk, idProduto_fk, dataRetirada, qtdRetirada, idFornecedor_fk) " +
+                                          "values('" + t.idUsuario + "', '" + t.idProduto + "', '" + t.dataRetirada + "', '" + t.qtdRetirada + "', '" + t.idFornecedor + "')";
+
+                        cmd.Connection = conexao.Conectar();
+                        cmd.ExecuteNonQuery();
+                        conexao.Desconectar();
+                        MessageBox.Show("Remessa despachada com sucesso!");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error " + ex);
+                    }
+                }
             }
         }
 

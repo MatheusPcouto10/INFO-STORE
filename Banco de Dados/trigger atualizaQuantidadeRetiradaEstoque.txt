@@ -1,0 +1,23 @@
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE TRIGGER atualizaQuantidadeRetiradaEstoque
+   ON  dbo.Retiradas
+   AFTER INSERT
+AS 
+BEGIN
+	declare @retirada int, @produto int, @qtdRetirada int
+      set @retirada = (select max(idRetiradas) from Retiradas)
+
+	  set @produto = (select idProduto_fk from Retiradas where idRetiradas = @retirada)
+	  set @qtdRetirada = (select qtdRetirada from Retiradas where idRetiradas = @retirada)
+
+	  UPDATE dbo.Estoque set [qtdDisponivel] -= @qtdRetirada where idProduto_fk = @produto
+
+END
+GO

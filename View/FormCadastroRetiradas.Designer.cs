@@ -363,12 +363,14 @@
             this.Controls.Add(this.dtDataRetirada);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FormCadastroRetiradas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Retiradas";
             this.Load += new System.EventHandler(this.FormCadastroRetiradas_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormCadastroRetiradas_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgProdutos_Retirada)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

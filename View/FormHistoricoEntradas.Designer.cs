@@ -400,6 +400,7 @@
             // 
             // txtQuantidadeEntrada
             // 
+            this.txtQuantidadeEntrada.Enabled = false;
             this.txtQuantidadeEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtQuantidadeEntrada.Location = new System.Drawing.Point(789, 129);
             this.txtQuantidadeEntrada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -496,12 +497,14 @@
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FormHistoricoEntradas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Histórico de Entradas";
             this.Load += new System.EventHandler(this.FormHistoricoEntradas_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormHistoricoEntradas_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

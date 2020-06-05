@@ -72,7 +72,7 @@ namespace AvaliacaoA1.View
             }
         }
 
-        private void btnPesquisa_Produtos_Click(object sender, EventArgs e)
+        private void btnFormPesquisa_Produtos_Click(object sender, EventArgs e)
         {
             FormPesquisaProduto formPesquisaProduto = new FormPesquisaProduto();
             if (txtIdProduto.Text == "")
@@ -390,6 +390,32 @@ namespace AvaliacaoA1.View
                     MessageBox.Show("Nenhum Fornecedor encontrado");
                 }
                 conexao.Desconectar();
+            }
+        }
+
+        private void FormHistoricoRetiradas_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (txtIdFornecedor.Text != "")
+            {
+                switch (e.KeyCode)
+                {
+                    case Keys.Enter:
+                        this.btnFormPesquisaFornecedor_Click(null, null);
+                        break;
+                    default:
+                        break;
+                }
+            }
+            if (txtIdProduto.Text != "")
+            {
+                switch (e.KeyCode)
+                {
+                    case Keys.Enter:
+                        this.btnFormPesquisa_Produtos_Click(null, null);
+                        break;
+                    default:
+                        break;
+                }
             }
         }
     }

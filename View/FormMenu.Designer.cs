@@ -489,10 +489,10 @@
             this.linkHistRetiradas.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.linkHistRetiradas.Location = new System.Drawing.Point(1558, 224);
             this.linkHistRetiradas.Name = "linkHistRetiradas";
-            this.linkHistRetiradas.Size = new System.Drawing.Size(99, 48);
+            this.linkHistRetiradas.Size = new System.Drawing.Size(102, 48);
             this.linkHistRetiradas.TabIndex = 8;
             this.linkHistRetiradas.TabStop = true;
-            this.linkHistRetiradas.Text = "HISTÓRICO \r\nDE ENTRADAS\r\n";
+            this.linkHistRetiradas.Text = "HISTÓRICO \r\nDE RETIRADAS\r\n";
             this.linkHistRetiradas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.linkHistRetiradas.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkHistRetiradas_LinkClicked);
             // 
@@ -532,7 +532,7 @@
             this.linkHistEntradas.Size = new System.Drawing.Size(99, 48);
             this.linkHistEntradas.TabIndex = 7;
             this.linkHistEntradas.TabStop = true;
-            this.linkHistEntradas.Text = "HISTÓRICO \r\nDE ENTRADAS";
+            this.linkHistEntradas.Text = "HISTÓRICO \r\nDE ENTRADAS\r\n";
             this.linkHistEntradas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.linkHistEntradas.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkHistEntradas_LinkClicked);
             // 
