@@ -116,16 +116,16 @@
             this.btnPesquisa});
             this.fillByNomeToolStrip.Location = new System.Drawing.Point(439, 72);
             this.fillByNomeToolStrip.Name = "fillByNomeToolStrip";
-            this.fillByNomeToolStrip.Size = new System.Drawing.Size(320, 27);
+            this.fillByNomeToolStrip.Size = new System.Drawing.Size(337, 27);
             this.fillByNomeToolStrip.TabIndex = 6;
             this.fillByNomeToolStrip.Text = "fillByNomeToolStrip";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.toolStripLabel1.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.toolStripLabel1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(87, 24);
+            this.toolStripLabel1.Size = new System.Drawing.Size(104, 24);
             this.toolStripLabel1.Text = "PESQUISAR:";
             // 
             // txtPesquisa
@@ -207,7 +207,7 @@
             // 
             this.groupBox1.Controls.Add(this.cbSubCategorias);
             this.groupBox1.Controls.Add(this.cbCategorias);
-            this.groupBox1.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(105, 219);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
@@ -220,7 +220,7 @@
             // cbSubCategorias
             // 
             this.cbSubCategorias.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cbSubCategorias.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSubCategorias.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSubCategorias.FormattingEnabled = true;
             this.cbSubCategorias.Location = new System.Drawing.Point(195, 45);
             this.cbSubCategorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -232,7 +232,7 @@
             // cbCategorias
             // 
             this.cbCategorias.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cbCategorias.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCategorias.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategorias.FormattingEnabled = true;
             this.cbCategorias.Location = new System.Drawing.Point(6, 45);
             this.cbCategorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -245,17 +245,17 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(763, 329);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 24);
+            this.label6.Size = new System.Drawing.Size(64, 24);
             this.label6.TabIndex = 51;
             this.label6.Text = "Status:";
             // 
             // cbStatus
             // 
             this.cbStatus.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cbStatus.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbStatus.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbStatus.FormattingEnabled = true;
             this.cbStatus.Items.AddRange(new object[] {
             "Em Atividade",
@@ -280,10 +280,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(762, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 29);
+            this.label4.Size = new System.Drawing.Size(93, 29);
             this.label4.TabIndex = 48;
             this.label4.Text = "Imagem:";
             // 
@@ -329,20 +329,20 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label5.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(100, 343);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 29);
+            this.label5.Size = new System.Drawing.Size(72, 29);
             this.label5.TabIndex = 43;
             this.label5.Text = "Preço:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(103, 113);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 29);
+            this.label1.Size = new System.Drawing.Size(111, 29);
             this.label1.TabIndex = 42;
             this.label1.Text = "Descrição:";
             // 
@@ -358,10 +358,10 @@
             // labelNomeProduto
             // 
             this.labelNomeProduto.AutoSize = true;
-            this.labelNomeProduto.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Bold);
+            this.labelNomeProduto.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNomeProduto.Location = new System.Drawing.Point(101, 15);
             this.labelNomeProduto.Name = "labelNomeProduto";
-            this.labelNomeProduto.Size = new System.Drawing.Size(78, 29);
+            this.labelNomeProduto.Size = new System.Drawing.Size(91, 29);
             this.labelNomeProduto.TabIndex = 40;
             this.labelNomeProduto.Text = "Produto:";
             // 
@@ -380,8 +380,8 @@
             this.btnSalvarProduto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSalvarProduto.FlatAppearance.BorderSize = 2;
             this.btnSalvarProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvarProduto.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSalvarProduto.Location = new System.Drawing.Point(538, 401);
+            this.btnSalvarProduto.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvarProduto.Location = new System.Drawing.Point(530, 390);
             this.btnSalvarProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalvarProduto.Name = "btnSalvarProduto";
             this.btnSalvarProduto.Size = new System.Drawing.Size(140, 38);
@@ -412,11 +412,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label2.Location = new System.Drawing.Point(545, 9);
+            this.label2.Location = new System.Drawing.Point(528, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 40);
+            this.label2.Size = new System.Drawing.Size(139, 41);
             this.label2.TabIndex = 3;
             this.label2.Text = "ESTOQUE\r\n";
             // 
@@ -435,11 +435,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label3.Location = new System.Drawing.Point(532, 14);
+            this.label3.Location = new System.Drawing.Point(524, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 34);
+            this.label3.Size = new System.Drawing.Size(159, 34);
             this.label3.TabIndex = 21;
             this.label3.Text = "Feito por Matheus Pimentel  \r\n 2020\r\n";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -449,7 +449,7 @@
             this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnVoltar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVoltar.Location = new System.Drawing.Point(12, 17);
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

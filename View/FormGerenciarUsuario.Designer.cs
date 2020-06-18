@@ -108,11 +108,11 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LawnGreen;
             this.label2.Location = new System.Drawing.Point(446, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(246, 40);
+            this.label2.Size = new System.Drawing.Size(313, 41);
             this.label2.TabIndex = 3;
             this.label2.Text = "GERENCIAR USUÁRIOS";
             // 
@@ -132,11 +132,11 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label3.Location = new System.Drawing.Point(518, 11);
+            this.label3.Location = new System.Drawing.Point(526, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 34);
+            this.label3.Size = new System.Drawing.Size(159, 34);
             this.label3.TabIndex = 21;
             this.label3.Text = "Feito por Matheus Pimentel  \r\n 2020\r\n";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -146,7 +146,7 @@
             this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnVoltar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVoltar.Location = new System.Drawing.Point(12, 17);
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -245,16 +245,16 @@
             this.btnPesquisa});
             this.fillByNomeToolStrip.Location = new System.Drawing.Point(388, 71);
             this.fillByNomeToolStrip.Name = "fillByNomeToolStrip";
-            this.fillByNomeToolStrip.Size = new System.Drawing.Size(320, 27);
+            this.fillByNomeToolStrip.Size = new System.Drawing.Size(337, 27);
             this.fillByNomeToolStrip.TabIndex = 6;
             this.fillByNomeToolStrip.Text = "fillByNomeToolStrip";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.toolStripLabel1.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripLabel1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(87, 24);
+            this.toolStripLabel1.Size = new System.Drawing.Size(104, 24);
             this.toolStripLabel1.Text = "PESQUISAR:";
             // 
             // txtPesquisa
@@ -349,7 +349,7 @@
             this.txtNomeUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.txtNomeUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeUsuario.Location = new System.Drawing.Point(171, 50);
+            this.txtNomeUsuario.Location = new System.Drawing.Point(184, 67);
             this.txtNomeUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNomeUsuario.Name = "txtNomeUsuario";
             this.txtNomeUsuario.Size = new System.Drawing.Size(333, 26);
@@ -360,10 +360,10 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(168, 86);
+            this.label5.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(181, 103);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 21);
+            this.label5.Size = new System.Drawing.Size(57, 21);
             this.label5.TabIndex = 63;
             this.label5.Text = "E-mail:";
             // 
@@ -372,7 +372,7 @@
             this.txtEmailUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.txtEmailUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailUsuario.Location = new System.Drawing.Point(171, 112);
+            this.txtEmailUsuario.Location = new System.Drawing.Point(184, 129);
             this.txtEmailUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmailUsuario.Name = "txtEmailUsuario";
             this.txtEmailUsuario.Size = new System.Drawing.Size(333, 26);
@@ -383,10 +383,10 @@
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(621, 148);
+            this.label13.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(673, 164);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(54, 21);
+            this.label13.Size = new System.Drawing.Size(60, 21);
             this.label13.TabIndex = 82;
             this.label13.Text = "Quadra:";
             // 
@@ -395,7 +395,7 @@
             this.txtQuadraUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtQuadraUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuadraUsuario.Location = new System.Drawing.Point(625, 174);
+            this.txtQuadraUsuario.Location = new System.Drawing.Point(677, 190);
             this.txtQuadraUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtQuadraUsuario.Name = "txtQuadraUsuario";
             this.txtQuadraUsuario.Size = new System.Drawing.Size(349, 26);
@@ -406,10 +406,10 @@
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(820, 209);
+            this.label12.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(872, 225);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(36, 21);
+            this.label12.Size = new System.Drawing.Size(42, 21);
             this.label12.TabIndex = 80;
             this.label12.Text = "Lote:";
             // 
@@ -418,7 +418,7 @@
             this.txtLoteUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLoteUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoteUsuario.Location = new System.Drawing.Point(824, 235);
+            this.txtLoteUsuario.Location = new System.Drawing.Point(876, 251);
             this.txtLoteUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLoteUsuario.Name = "txtLoteUsuario";
             this.txtLoteUsuario.Size = new System.Drawing.Size(151, 26);
@@ -429,10 +429,10 @@
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(621, 209);
+            this.label10.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(673, 225);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(64, 21);
+            this.label10.Size = new System.Drawing.Size(71, 21);
             this.label10.TabIndex = 78;
             this.label10.Text = "Alameda:";
             // 
@@ -441,7 +441,7 @@
             this.txtAlamedaUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAlamedaUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAlamedaUsuario.Location = new System.Drawing.Point(624, 235);
+            this.txtAlamedaUsuario.Location = new System.Drawing.Point(676, 251);
             this.txtAlamedaUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAlamedaUsuario.Name = "txtAlamedaUsuario";
             this.txtAlamedaUsuario.Size = new System.Drawing.Size(132, 26);
@@ -452,10 +452,10 @@
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(621, 86);
+            this.label11.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(673, 102);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 21);
+            this.label11.Size = new System.Drawing.Size(54, 21);
             this.label11.TabIndex = 76;
             this.label11.Text = "Bairro:";
             // 
@@ -464,7 +464,7 @@
             this.txtBairroUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBairroUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBairroUsuario.Location = new System.Drawing.Point(625, 112);
+            this.txtBairroUsuario.Location = new System.Drawing.Point(677, 128);
             this.txtBairroUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBairroUsuario.Name = "txtBairroUsuario";
             this.txtBairroUsuario.Size = new System.Drawing.Size(349, 26);
@@ -475,10 +475,10 @@
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(169, 209);
+            this.label9.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(182, 226);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(123, 21);
+            this.label9.Size = new System.Drawing.Size(145, 21);
             this.label9.TabIndex = 74;
             this.label9.Text = "Data de Nascimento:";
             // 
@@ -488,7 +488,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dtNascimento.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtNascimento.Location = new System.Drawing.Point(171, 235);
+            this.dtNascimento.Location = new System.Drawing.Point(184, 252);
             this.dtNascimento.Margin = new System.Windows.Forms.Padding(4);
             this.dtNascimento.Name = "dtNascimento";
             this.dtNascimento.Size = new System.Drawing.Size(232, 29);
@@ -499,7 +499,7 @@
             this.txtTelefoneUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTelefoneUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefoneUsuario.Location = new System.Drawing.Point(839, 50);
+            this.txtTelefoneUsuario.Location = new System.Drawing.Point(891, 66);
             this.txtTelefoneUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefoneUsuario.Mask = "(99) 00000-0000";
             this.txtTelefoneUsuario.Name = "txtTelefoneUsuario";
@@ -512,7 +512,7 @@
             this.txtCpfUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCpfUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpfUsuario.Location = new System.Drawing.Point(625, 50);
+            this.txtCpfUsuario.Location = new System.Drawing.Point(677, 66);
             this.txtCpfUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtCpfUsuario.Mask = "000.000.000-00";
             this.txtCpfUsuario.Name = "txtCpfUsuario";
@@ -525,10 +525,10 @@
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(835, 25);
+            this.label8.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(887, 41);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 21);
+            this.label8.Size = new System.Drawing.Size(68, 21);
             this.label8.TabIndex = 70;
             this.label8.Text = "Telefone:";
             // 
@@ -537,10 +537,10 @@
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(167, 271);
+            this.label7.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(180, 288);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 21);
+            this.label7.Size = new System.Drawing.Size(114, 21);
             this.label7.TabIndex = 67;
             this.label7.Text = "Tipo de Usuário:";
             // 
@@ -549,12 +549,12 @@
             this.cbTipoUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.cbTipoUsuario.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cbTipoUsuario.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTipoUsuario.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTipoUsuario.FormattingEnabled = true;
             this.cbTipoUsuario.Items.AddRange(new object[] {
             "Administrador",
             "Funcionário"});
-            this.cbTipoUsuario.Location = new System.Drawing.Point(171, 297);
+            this.cbTipoUsuario.Location = new System.Drawing.Point(184, 314);
             this.cbTipoUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbTipoUsuario.Name = "cbTipoUsuario";
             this.cbTipoUsuario.Size = new System.Drawing.Size(235, 30);
@@ -566,10 +566,10 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(167, 148);
+            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(180, 165);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 21);
+            this.label4.Size = new System.Drawing.Size(54, 21);
             this.label4.TabIndex = 65;
             this.label4.Text = "Senha:";
             // 
@@ -578,7 +578,7 @@
             this.txtSenhaUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.txtSenhaUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenhaUsuario.Location = new System.Drawing.Point(171, 174);
+            this.txtSenhaUsuario.Location = new System.Drawing.Point(184, 191);
             this.txtSenhaUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSenhaUsuario.Name = "txtSenhaUsuario";
             this.txtSenhaUsuario.Size = new System.Drawing.Size(331, 26);
@@ -589,10 +589,10 @@
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(621, 25);
+            this.label14.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(673, 41);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(32, 21);
+            this.label14.Size = new System.Drawing.Size(36, 24);
             this.label14.TabIndex = 61;
             this.label14.Text = "CPF:";
             // 
@@ -601,20 +601,20 @@
             this.labelNome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelNome.AutoSize = true;
-            this.labelNome.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNome.Location = new System.Drawing.Point(169, 25);
+            this.labelNome.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNome.Location = new System.Drawing.Point(182, 42);
             this.labelNome.Name = "labelNome";
-            this.labelNome.Size = new System.Drawing.Size(45, 21);
+            this.labelNome.Size = new System.Drawing.Size(52, 21);
             this.labelNome.TabIndex = 35;
             this.labelNome.Text = "Nome:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(620, 271);
+            this.label6.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(672, 287);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 21);
+            this.label6.Size = new System.Drawing.Size(55, 21);
             this.label6.TabIndex = 34;
             this.label6.Text = "Status:";
             // 
@@ -624,8 +624,8 @@
             this.btnSalvarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSalvarUsuario.FlatAppearance.BorderSize = 2;
             this.btnSalvarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvarUsuario.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSalvarUsuario.Location = new System.Drawing.Point(525, 374);
+            this.btnSalvarUsuario.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvarUsuario.Location = new System.Drawing.Point(543, 385);
             this.btnSalvarUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalvarUsuario.Name = "btnSalvarUsuario";
             this.btnSalvarUsuario.Size = new System.Drawing.Size(125, 38);
@@ -637,12 +637,12 @@
             // cbStatus
             // 
             this.cbStatus.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cbStatus.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbStatus.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbStatus.FormattingEnabled = true;
             this.cbStatus.Items.AddRange(new object[] {
             "Ativo",
             "Inativo"});
-            this.cbStatus.Location = new System.Drawing.Point(624, 298);
+            this.cbStatus.Location = new System.Drawing.Point(676, 314);
             this.cbStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbStatus.Name = "cbStatus";
             this.cbStatus.Size = new System.Drawing.Size(155, 30);

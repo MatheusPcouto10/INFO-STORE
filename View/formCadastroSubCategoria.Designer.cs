@@ -39,17 +39,17 @@
             // labelNomeProduto
             // 
             this.labelNomeProduto.AutoSize = true;
-            this.labelNomeProduto.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomeProduto.Location = new System.Drawing.Point(15, 27);
+            this.labelNomeProduto.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNomeProduto.Location = new System.Drawing.Point(11, 25);
             this.labelNomeProduto.Name = "labelNomeProduto";
-            this.labelNomeProduto.Size = new System.Drawing.Size(162, 23);
+            this.labelNomeProduto.Size = new System.Drawing.Size(189, 23);
             this.labelNomeProduto.TabIndex = 22;
             this.labelNomeProduto.Text = "Nome da Sub-categoria:";
             // 
             // txtNomeSubCategoria
             // 
             this.txtNomeSubCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeSubCategoria.Location = new System.Drawing.Point(15, 50);
+            this.txtNomeSubCategoria.Location = new System.Drawing.Point(15, 59);
             this.txtNomeSubCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNomeSubCategoria.Name = "txtNomeSubCategoria";
             this.txtNomeSubCategoria.Size = new System.Drawing.Size(267, 26);
@@ -58,7 +58,7 @@
             // cbCategorias
             // 
             this.cbCategorias.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cbCategorias.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCategorias.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategorias.FormattingEnabled = true;
             this.cbCategorias.Location = new System.Drawing.Point(15, 130);
             this.cbCategorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -70,10 +70,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 97);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(11, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 23);
+            this.label1.Size = new System.Drawing.Size(173, 23);
             this.label1.TabIndex = 33;
             this.label1.Text = "Selecione a categoria:";
             // 
@@ -83,7 +83,7 @@
             this.btnCadastrarSubCategoria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCadastrarSubCategoria.FlatAppearance.BorderSize = 2;
             this.btnCadastrarSubCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrarSubCategoria.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCadastrarSubCategoria.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarSubCategoria.Location = new System.Drawing.Point(117, 239);
             this.btnCadastrarSubCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCadastrarSubCategoria.Name = "btnCadastrarSubCategoria";

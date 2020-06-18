@@ -116,11 +116,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(3, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 18);
+            this.label1.Size = new System.Drawing.Size(50, 18);
             this.label1.TabIndex = 20;
             this.label1.Text = "Código:";
             // 
@@ -139,7 +139,7 @@
             // labelIdUsuarioLogado
             // 
             this.labelIdUsuarioLogado.AutoSize = true;
-            this.labelIdUsuarioLogado.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIdUsuarioLogado.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIdUsuarioLogado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.labelIdUsuarioLogado.Location = new System.Drawing.Point(53, 45);
             this.labelIdUsuarioLogado.Name = "labelIdUsuarioLogado";
@@ -150,7 +150,7 @@
             // 
             this.labelTipoUsuarioLogado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTipoUsuarioLogado.AutoSize = true;
-            this.labelTipoUsuarioLogado.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTipoUsuarioLogado.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTipoUsuarioLogado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.labelTipoUsuarioLogado.Location = new System.Drawing.Point(1558, 31);
             this.labelTipoUsuarioLogado.Name = "labelTipoUsuarioLogado";
@@ -173,11 +173,11 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Bahnschrift", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label2.Location = new System.Drawing.Point(824, 11);
+            this.label2.Location = new System.Drawing.Point(808, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 46);
+            this.label2.Size = new System.Drawing.Size(125, 46);
             this.label2.TabIndex = 3;
             this.label2.Text = "MENU";
             // 
@@ -197,11 +197,11 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label3.Location = new System.Drawing.Point(798, 19);
+            this.label3.Location = new System.Drawing.Point(773, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(178, 34);
+            this.label3.Size = new System.Drawing.Size(203, 34);
             this.label3.TabIndex = 20;
             this.label3.Text = "Feito por Matheus Pimentel Do Couto\r\n 2020\r\n";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -212,7 +212,7 @@
             this.btnSair.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSair.FlatAppearance.BorderSize = 2;
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSair.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSair.Location = new System.Drawing.Point(15, 23);
             this.btnSair.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -285,14 +285,14 @@
             this.linkGerenciarFornecedores.AutoSize = true;
             this.linkGerenciarFornecedores.BackColor = System.Drawing.Color.Transparent;
             this.linkGerenciarFornecedores.DisabledLinkColor = System.Drawing.Color.Black;
-            this.linkGerenciarFornecedores.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkGerenciarFornecedores.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkGerenciarFornecedores.ForeColor = System.Drawing.Color.Black;
             this.linkGerenciarFornecedores.LinkArea = new System.Windows.Forms.LinkArea(0, 24);
             this.linkGerenciarFornecedores.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkGerenciarFornecedores.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.linkGerenciarFornecedores.Location = new System.Drawing.Point(864, 224);
+            this.linkGerenciarFornecedores.Location = new System.Drawing.Point(851, 230);
             this.linkGerenciarFornecedores.Name = "linkGerenciarFornecedores";
-            this.linkGerenciarFornecedores.Size = new System.Drawing.Size(112, 48);
+            this.linkGerenciarFornecedores.Size = new System.Drawing.Size(135, 48);
             this.linkGerenciarFornecedores.TabIndex = 20;
             this.linkGerenciarFornecedores.TabStop = true;
             this.linkGerenciarFornecedores.Text = "GERENCIAR \r\nFORNECEDORES";
@@ -304,14 +304,14 @@
             this.linkCadastroFornecedor.AutoSize = true;
             this.linkCadastroFornecedor.BackColor = System.Drawing.Color.Transparent;
             this.linkCadastroFornecedor.DisabledLinkColor = System.Drawing.Color.Black;
-            this.linkCadastroFornecedor.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkCadastroFornecedor.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkCadastroFornecedor.ForeColor = System.Drawing.Color.Black;
             this.linkCadastroFornecedor.LinkArea = new System.Windows.Forms.LinkArea(0, 24);
             this.linkCadastroFornecedor.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkCadastroFornecedor.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.linkCadastroFornecedor.Location = new System.Drawing.Point(671, 224);
+            this.linkCadastroFornecedor.Location = new System.Drawing.Point(655, 230);
             this.linkCadastroFornecedor.Name = "linkCadastroFornecedor";
-            this.linkCadastroFornecedor.Size = new System.Drawing.Size(124, 54);
+            this.linkCadastroFornecedor.Size = new System.Drawing.Size(153, 54);
             this.linkCadastroFornecedor.TabIndex = 19;
             this.linkCadastroFornecedor.TabStop = true;
             this.linkCadastroFornecedor.Text = "CADASTRO\r\nDE FORNECEDOR\r\n";
@@ -345,7 +345,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 68);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip1.Size = new System.Drawing.Size(477, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(516, 27);
             this.toolStrip1.TabIndex = 16;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -398,13 +398,14 @@
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(90, 24);
-            this.toolStripButton2.Text = "Relátórios";
+            this.toolStripButton2.Text = "Relatórios";
             // 
             // relátórioDeUsuáriosToolStripMenuItem
             // 
             this.relátórioDeUsuáriosToolStripMenuItem.Name = "relátórioDeUsuáriosToolStripMenuItem";
             this.relátórioDeUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.relátórioDeUsuáriosToolStripMenuItem.Text = "Relatório de Usuários";
+            this.relátórioDeUsuáriosToolStripMenuItem.Click += new System.EventHandler(this.relatorioDeUsuariosToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
@@ -416,6 +417,7 @@
             this.relatórioDeProdutosToolStripMenuItem.Name = "relatórioDeProdutosToolStripMenuItem";
             this.relatórioDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.relatórioDeProdutosToolStripMenuItem.Text = "Relatório de Produtos";
+            this.relatórioDeProdutosToolStripMenuItem.Click += new System.EventHandler(this.relatorioDeProdutosToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
@@ -427,6 +429,7 @@
             this.relatórioDeFornecedoresToolStripMenuItem.Name = "relatórioDeFornecedoresToolStripMenuItem";
             this.relatórioDeFornecedoresToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.relatórioDeFornecedoresToolStripMenuItem.Text = "Relatório de Fornecedores";
+            this.relatórioDeFornecedoresToolStripMenuItem.Click += new System.EventHandler(this.relatorioDeFornecedoresToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
@@ -438,6 +441,7 @@
             this.relatórioDeEntradasToolStripMenuItem.Name = "relatórioDeEntradasToolStripMenuItem";
             this.relatórioDeEntradasToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.relatórioDeEntradasToolStripMenuItem.Text = "Relatório de Entradas";
+            this.relatórioDeEntradasToolStripMenuItem.Click += new System.EventHandler(this.relatorioDeEntradasToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
             // 
@@ -446,9 +450,10 @@
             // 
             // relatórioDeRetiradasToolStripMenuItem
             // 
-            this.relatórioDeRetiradasToolStripMenuItem.Name = "relatórioDeRetiradasToolStripMenuItem";
+            this.relatórioDeRetiradasToolStripMenuItem.Name = "relatorioDeRetiradasToolStripMenuItem";
             this.relatórioDeRetiradasToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.relatórioDeRetiradasToolStripMenuItem.Text = "Relatório de Retiradas";
+            this.relatórioDeRetiradasToolStripMenuItem.Click += new System.EventHandler(this.relatorioDeRetiradasToolStripMenuItem_Click);
             // 
             // toolStripSeparator7
             // 
@@ -484,12 +489,12 @@
             // 
             this.linkHistRetiradas.AutoSize = true;
             this.linkHistRetiradas.BackColor = System.Drawing.Color.Transparent;
-            this.linkHistRetiradas.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkHistRetiradas.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkHistRetiradas.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkHistRetiradas.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.linkHistRetiradas.Location = new System.Drawing.Point(1558, 224);
+            this.linkHistRetiradas.Location = new System.Drawing.Point(1539, 230);
             this.linkHistRetiradas.Name = "linkHistRetiradas";
-            this.linkHistRetiradas.Size = new System.Drawing.Size(102, 48);
+            this.linkHistRetiradas.Size = new System.Drawing.Size(122, 48);
             this.linkHistRetiradas.TabIndex = 8;
             this.linkHistRetiradas.TabStop = true;
             this.linkHistRetiradas.Text = "HISTÓRICO \r\nDE RETIRADAS\r\n";
@@ -524,12 +529,12 @@
             // 
             this.linkHistEntradas.AutoSize = true;
             this.linkHistEntradas.BackColor = System.Drawing.Color.Transparent;
-            this.linkHistEntradas.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkHistEntradas.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkHistEntradas.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkHistEntradas.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.linkHistEntradas.Location = new System.Drawing.Point(1216, 224);
+            this.linkHistEntradas.Location = new System.Drawing.Point(1200, 233);
             this.linkHistEntradas.Name = "linkHistEntradas";
-            this.linkHistEntradas.Size = new System.Drawing.Size(99, 48);
+            this.linkHistEntradas.Size = new System.Drawing.Size(118, 48);
             this.linkHistEntradas.TabIndex = 7;
             this.linkHistEntradas.TabStop = true;
             this.linkHistEntradas.Text = "HISTÓRICO \r\nDE ENTRADAS\r\n";
@@ -563,12 +568,12 @@
             // 
             this.linkEstoque.AutoSize = true;
             this.linkEstoque.BackColor = System.Drawing.Color.Transparent;
-            this.linkEstoque.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkEstoque.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkEstoque.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkEstoque.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.linkEstoque.Location = new System.Drawing.Point(516, 236);
+            this.linkEstoque.Location = new System.Drawing.Point(509, 236);
             this.linkEstoque.Name = "linkEstoque";
-            this.linkEstoque.Size = new System.Drawing.Size(68, 24);
+            this.linkEstoque.Size = new System.Drawing.Size(81, 24);
             this.linkEstoque.TabIndex = 6;
             this.linkEstoque.TabStop = true;
             this.linkEstoque.Text = "ESTOQUE";
@@ -577,13 +582,13 @@
             // linkGerenciarUsuarios
             // 
             this.linkGerenciarUsuarios.AutoSize = true;
-            this.linkGerenciarUsuarios.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkGerenciarUsuarios.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkGerenciarUsuarios.LinkArea = new System.Windows.Forms.LinkArea(0, 20);
             this.linkGerenciarUsuarios.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkGerenciarUsuarios.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.linkGerenciarUsuarios.Location = new System.Drawing.Point(192, 224);
+            this.linkGerenciarUsuarios.Location = new System.Drawing.Point(183, 224);
             this.linkGerenciarUsuarios.Name = "linkGerenciarUsuarios";
-            this.linkGerenciarUsuarios.Size = new System.Drawing.Size(87, 48);
+            this.linkGerenciarUsuarios.Size = new System.Drawing.Size(105, 48);
             this.linkGerenciarUsuarios.TabIndex = 9;
             this.linkGerenciarUsuarios.TabStop = true;
             this.linkGerenciarUsuarios.Text = "GERENCIAR \r\nUSUÁRIOS";
@@ -642,12 +647,12 @@
             // 
             this.linkCadastroProduto.AutoSize = true;
             this.linkCadastroProduto.BackColor = System.Drawing.Color.Transparent;
-            this.linkCadastroProduto.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkCadastroProduto.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkCadastroProduto.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkCadastroProduto.LinkColor = System.Drawing.Color.Black;
-            this.linkCadastroProduto.Location = new System.Drawing.Point(352, 224);
+            this.linkCadastroProduto.Location = new System.Drawing.Point(339, 224);
             this.linkCadastroProduto.Name = "linkCadastroProduto";
-            this.linkCadastroProduto.Size = new System.Drawing.Size(91, 48);
+            this.linkCadastroProduto.Size = new System.Drawing.Size(110, 48);
             this.linkCadastroProduto.TabIndex = 3;
             this.linkCadastroProduto.TabStop = true;
             this.linkCadastroProduto.Text = "CADASTRO \r\nDE PRODUTO";
@@ -658,12 +663,12 @@
             // 
             this.linkEntradas.AutoSize = true;
             this.linkEntradas.BackColor = System.Drawing.Color.Transparent;
-            this.linkEntradas.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkEntradas.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkEntradas.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkEntradas.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.linkEntradas.Location = new System.Drawing.Point(1045, 236);
+            this.linkEntradas.Location = new System.Drawing.Point(1040, 242);
             this.linkEntradas.Name = "linkEntradas";
-            this.linkEntradas.Size = new System.Drawing.Size(78, 24);
+            this.linkEntradas.Size = new System.Drawing.Size(92, 24);
             this.linkEntradas.TabIndex = 4;
             this.linkEntradas.TabStop = true;
             this.linkEntradas.Text = "ENTRADAS";
@@ -673,12 +678,12 @@
             // 
             this.linkRetiradas.AutoSize = true;
             this.linkRetiradas.BackColor = System.Drawing.Color.Transparent;
-            this.linkRetiradas.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkRetiradas.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkRetiradas.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkRetiradas.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.linkRetiradas.Location = new System.Drawing.Point(1400, 236);
+            this.linkRetiradas.Location = new System.Drawing.Point(1390, 242);
             this.linkRetiradas.Name = "linkRetiradas";
-            this.linkRetiradas.Size = new System.Drawing.Size(81, 24);
+            this.linkRetiradas.Size = new System.Drawing.Size(96, 24);
             this.linkRetiradas.TabIndex = 5;
             this.linkRetiradas.TabStop = true;
             this.linkRetiradas.Text = "RETIRADAS";
@@ -689,14 +694,14 @@
             this.linkCadastroUsuario.AutoSize = true;
             this.linkCadastroUsuario.BackColor = System.Drawing.Color.Transparent;
             this.linkCadastroUsuario.DisabledLinkColor = System.Drawing.Color.Black;
-            this.linkCadastroUsuario.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkCadastroUsuario.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkCadastroUsuario.ForeColor = System.Drawing.Color.Black;
             this.linkCadastroUsuario.LinkArea = new System.Windows.Forms.LinkArea(0, 21);
             this.linkCadastroUsuario.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkCadastroUsuario.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.linkCadastroUsuario.Location = new System.Drawing.Point(40, 224);
+            this.linkCadastroUsuario.Location = new System.Drawing.Point(25, 224);
             this.linkCadastroUsuario.Name = "linkCadastroUsuario";
-            this.linkCadastroUsuario.Size = new System.Drawing.Size(87, 48);
+            this.linkCadastroUsuario.Size = new System.Drawing.Size(106, 48);
             this.linkCadastroUsuario.TabIndex = 2;
             this.linkCadastroUsuario.TabStop = true;
             this.linkCadastroUsuario.Text = "CADASTRO \r\nDE USUÁRIO";

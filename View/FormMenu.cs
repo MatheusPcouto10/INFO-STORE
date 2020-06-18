@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AvaliacaoA1.View;
 using AvaliacaoA1.Session;
+using AvaliacaoA1.View.RelatoriosForm;
 
 namespace AvaliacaoA1
 {
@@ -64,7 +65,7 @@ namespace AvaliacaoA1
             FormHistoricoEntradas formHistoricoEntradas = new FormHistoricoEntradas();
             formHistoricoEntradas.Show();
         }
-        
+
         private void linkHistRetiradas_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FormHistoricoRetiradas formHistoricoRetiradas = new FormHistoricoRetiradas();
@@ -149,11 +150,44 @@ namespace AvaliacaoA1
             switch (e.KeyCode)
             {
                 case Keys.Escape:
-                    this.btnSair_Click(null, null);
+                    if (MessageBox.Show("Deseja realmente sair?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        this.btnSair_Click(null, null);
+                    }
                     break;
                 default:
                     break;
             }
+        }
+
+        private void relatorioDeProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRelatorioProduto form = new FormRelatorioProduto();
+            form.Show();
+        }
+
+        private void relatorioDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRelatorioUsuario form = new FormRelatorioUsuario();
+            form.Show();
+        }
+
+        private void relatorioDeFornecedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRelatorioFornecedores form = new FormRelatorioFornecedores();
+            form.Show();
+        }
+
+        private void relatorioDeEntradasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRelatorioEntradas form = new FormRelatorioEntradas();
+            form.Show();
+        }
+
+        private void relatorioDeRetiradasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRelatorioRetiradas form = new FormRelatorioRetiradas();
+            form.Show();
         }
     }
 }

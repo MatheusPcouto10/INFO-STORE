@@ -44,5 +44,16 @@ namespace AvaliacaoA1.Properties {
                 return ((string)(this["Loja_InformaticaConnectionStringNoteBenildes"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-QP8C0L2V\\SQLEXPRESS;Initial Catalog=Loja-Informatica;Integrate" +
+            "d Security=True")]
+        public string Loja_InformaticaConnectionString1 {
+            get {
+                return ((string)(this["Loja_InformaticaConnectionString1"]));
+            }
+        }
     }
 }

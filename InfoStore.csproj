@@ -33,6 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -47,6 +65,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSets\DataSetFornecedores.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetFornecedores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DataSetProdutos.cs">
+      <DependentUpon>DataSetProdutos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DataSetProdutos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProdutos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DataSetRelatorioEntradas.cs">
+      <DependentUpon>DataSetRelatorioEntradas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DataSetRelatorioEntradas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRelatorioEntradas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DataSetRelatorioRetiradas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRelatorioRetiradas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DataSetUsuarios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetUsuarios.xsd</DependentUpon>
+    </Compile>
     <Compile Include="IDao\IDaoCategorias.cs" />
     <Compile Include="IDao\IDaoEntradas.cs" />
     <Compile Include="IDao\IDaoFornecedor.cs" />
@@ -56,6 +105,7 @@
     <Compile Include="Model\Fornecedor.cs" />
     <Compile Include="Model\Retiradas.cs" />
     <Compile Include="Session\UsuarioSession.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="View\FormAlterarSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,12 +223,47 @@
     <Compile Include="View\FormPesquisaProduto.Designer.cs">
       <DependentUpon>FormPesquisaProduto.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\RelatoriosForm\FormRelatorioEntradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RelatoriosForm\FormRelatorioEntradas.Designer.cs">
+      <DependentUpon>FormRelatorioEntradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RelatoriosForm\FormRelatorioFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RelatoriosForm\FormRelatorioFornecedores.Designer.cs">
+      <DependentUpon>FormRelatorioFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RelatoriosForm\FormRelatorioProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RelatoriosForm\FormRelatorioProduto.Designer.cs">
+      <DependentUpon>FormRelatorioProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormSobre.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FormSobre.Designer.cs">
       <DependentUpon>FormSobre.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\RelatoriosForm\FormRelatorioRetiradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RelatoriosForm\FormRelatorioRetiradas.Designer.cs">
+      <DependentUpon>FormRelatorioRetiradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RelatoriosForm\FormRelatorioUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RelatoriosForm\FormRelatorioUsuario.Designer.cs">
+      <DependentUpon>FormRelatorioUsuario.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Relatorios\RelatorioEntradas.rdlc" />
+    <EmbeddedResource Include="Relatorios\RelatorioFornecedores.rdlc" />
+    <EmbeddedResource Include="Relatorios\RelatorioProdutos.rdlc" />
+    <EmbeddedResource Include="Relatorios\RelatorioRetiradas.rdlc" />
+    <EmbeddedResource Include="Relatorios\RelatorioUsuarios.rdlc" />
     <EmbeddedResource Include="View\FormAlterarSenha.resx">
       <DependentUpon>FormAlterarSenha.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,9 +320,80 @@
     <EmbeddedResource Include="View\FormPesquisaProduto.resx">
       <DependentUpon>FormPesquisaProduto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\RelatoriosForm\FormRelatorioEntradas.resx">
+      <DependentUpon>FormRelatorioEntradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RelatoriosForm\FormRelatorioFornecedores.resx">
+      <DependentUpon>FormRelatorioFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RelatoriosForm\FormRelatorioProduto.resx">
+      <DependentUpon>FormRelatorioProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormSobre.resx">
       <DependentUpon>FormSobre.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\RelatoriosForm\FormRelatorioRetiradas.resx">
+      <DependentUpon>FormRelatorioRetiradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RelatoriosForm\FormRelatorioUsuario.resx">
+      <DependentUpon>FormRelatorioUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSets\DataSetFornecedores.xsc">
+      <DependentUpon>DataSetFornecedores.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSetFornecedores.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetFornecedores.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\DataSetFornecedores.xss">
+      <DependentUpon>DataSetFornecedores.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSetProdutos.xsc">
+      <DependentUpon>DataSetProdutos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSetProdutos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProdutos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\DataSetProdutos.xss">
+      <DependentUpon>DataSetProdutos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSetRelatorioEntradas.xsc">
+      <DependentUpon>DataSetRelatorioEntradas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSetRelatorioEntradas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRelatorioEntradas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\DataSetRelatorioEntradas.xss">
+      <DependentUpon>DataSetRelatorioEntradas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSetRelatorioRetiradas.xsc">
+      <DependentUpon>DataSetRelatorioRetiradas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSetRelatorioRetiradas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRelatorioRetiradas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\DataSetRelatorioRetiradas.xss">
+      <DependentUpon>DataSetRelatorioRetiradas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSetUsuarios.xsc">
+      <DependentUpon>DataSetUsuarios.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSetUsuarios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetUsuarios.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\DataSetUsuarios.xss">
+      <DependentUpon>DataSetUsuarios.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -356,5 +512,21 @@
   <ItemGroup>
     <None Include="Resources\compose_23855.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

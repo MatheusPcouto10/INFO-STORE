@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetRelatorioRetiradas" targetNamespace="http://tempuri.org/DataSetRelatorioRetiradas.xsd" xmlns:mstns="http://tempuri.org/DataSetRelatorioRetiradas.xsd" xmlns="http://tempuri.org/DataSetRelatorioRetiradas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetRelatorioRetiradas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetRelatorioRetiradas" msprop:Generator_UserDSName="DataSetRelatorioRetiradas">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Retiradas" msprop:Generator_TableClassName="RetiradasDataTable" msprop:Generator_TableVarName="tableRetiradas" msprop:Generator_TablePropName="Retiradas" msprop:Generator_RowDeletingName="RetiradasRowDeleting" msprop:Generator_RowChangingName="RetiradasRowChanging" msprop:Generator_RowEvHandlerName="RetiradasRowChangeEventHandler" msprop:Generator_RowDeletedName="RetiradasRowDeleted" msprop:Generator_UserTableName="Retiradas" msprop:Generator_RowChangedName="RetiradasRowChanged" msprop:Generator_RowEvArgName="RetiradasRowChangeEvent" msprop:Generator_RowClassName="RetiradasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idRetiradas" msprop:Generator_ColumnVarNameInTable="columnidRetiradas" msprop:Generator_ColumnPropNameInRow="idRetiradas" msprop:Generator_ColumnPropNameInTable="idRetiradasColumn" msprop:Generator_UserColumnName="idRetiradas" type="xs:string" minOccurs="0" />
+              <xs:element name="nome" msprop:Generator_ColumnVarNameInTable="columnnome" msprop:Generator_ColumnPropNameInRow="nome" msprop:Generator_ColumnPropNameInTable="nomeColumn" msprop:Generator_UserColumnName="nome" type="xs:string" minOccurs="0" />
+              <xs:element name="nomeProduto" msprop:Generator_ColumnVarNameInTable="columnnomeProduto" msprop:Generator_ColumnPropNameInRow="nomeProduto" msprop:Generator_ColumnPropNameInTable="nomeProdutoColumn" msprop:Generator_UserColumnName="nomeProduto" type="xs:string" minOccurs="0" />
+              <xs:element name="qtdRetirada" msprop:Generator_ColumnVarNameInTable="columnqtdRetirada" msprop:Generator_ColumnPropNameInRow="qtdRetirada" msprop:Generator_ColumnPropNameInTable="qtdRetiradaColumn" msprop:Generator_UserColumnName="qtdRetirada" type="xs:string" minOccurs="0" />
+              <xs:element name="dataRetirada" msprop:Generator_ColumnVarNameInTable="columndataRetirada" msprop:Generator_ColumnPropNameInRow="dataRetirada" msprop:Generator_ColumnPropNameInTable="dataRetiradaColumn" msprop:Generator_UserColumnName="dataRetirada" type="xs:string" minOccurs="0" />
+              <xs:element name="idFornecedor_fk" msprop:Generator_ColumnVarNameInTable="columnidFornecedor_fk" msprop:Generator_ColumnPropNameInRow="idFornecedor_fk" msprop:Generator_ColumnPropNameInTable="idFornecedor_fkColumn" msprop:Generator_UserColumnName="idFornecedor_fk" type="xs:string" minOccurs="0" />
+              <xs:element name="nomeFantasia" msprop:Generator_ColumnVarNameInTable="columnnomeFantasia" msprop:Generator_ColumnPropNameInRow="nomeFantasia" msprop:Generator_ColumnPropNameInTable="nomeFantasiaColumn" msprop:Generator_UserColumnName="nomeFantasia" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

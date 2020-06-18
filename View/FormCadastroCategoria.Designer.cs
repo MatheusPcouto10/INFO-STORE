@@ -37,17 +37,17 @@
             // labelNomeProduto
             // 
             this.labelNomeProduto.AutoSize = true;
-            this.labelNomeProduto.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomeProduto.Location = new System.Drawing.Point(12, 24);
+            this.labelNomeProduto.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNomeProduto.Location = new System.Drawing.Point(12, 26);
             this.labelNomeProduto.Name = "labelNomeProduto";
-            this.labelNomeProduto.Size = new System.Drawing.Size(132, 23);
+            this.labelNomeProduto.Size = new System.Drawing.Size(155, 23);
             this.labelNomeProduto.TabIndex = 24;
             this.labelNomeProduto.Text = "Nome da Categoria:";
             // 
             // txtNomeCategoria
             // 
             this.txtNomeCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeCategoria.Location = new System.Drawing.Point(12, 47);
+            this.txtNomeCategoria.Location = new System.Drawing.Point(12, 50);
             this.txtNomeCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNomeCategoria.Name = "txtNomeCategoria";
             this.txtNomeCategoria.Size = new System.Drawing.Size(267, 26);
@@ -59,11 +59,11 @@
             this.btnCadastrarCategoria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCadastrarCategoria.FlatAppearance.BorderSize = 2;
             this.btnCadastrarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrarCategoria.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCadastrarCategoria.Location = new System.Drawing.Point(114, 253);
+            this.btnCadastrarCategoria.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarCategoria.Location = new System.Drawing.Point(114, 269);
             this.btnCadastrarCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCadastrarCategoria.Name = "btnCadastrarCategoria";
-            this.btnCadastrarCategoria.Size = new System.Drawing.Size(165, 38);
+            this.btnCadastrarCategoria.Size = new System.Drawing.Size(165, 40);
             this.btnCadastrarCategoria.TabIndex = 35;
             this.btnCadastrarCategoria.Text = "CADASTRAR";
             this.btnCadastrarCategoria.UseVisualStyleBackColor = false;
@@ -71,13 +71,14 @@
             // 
             // FormCadastroCategoria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(315, 302);
+            this.ClientSize = new System.Drawing.Size(315, 321);
             this.Controls.Add(this.btnCadastrarCategoria);
             this.Controls.Add(this.labelNomeProduto);
             this.Controls.Add(this.txtNomeCategoria);
+            this.Font = new System.Drawing.Font("Symbol", 8.25F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;

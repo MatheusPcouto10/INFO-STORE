@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetProdutos" targetNamespace="http://tempuri.org/DataSetProdutos.xsd" xmlns:mstns="http://tempuri.org/DataSetProdutos.xsd" xmlns="http://tempuri.org/DataSetProdutos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetProdutos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetProdutos" msprop:Generator_UserDSName="DataSetProdutos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Produtos" msprop:Generator_TableClassName="ProdutosDataTable" msprop:Generator_TableVarName="tableProdutos" msprop:Generator_TablePropName="Produtos" msprop:Generator_RowDeletingName="ProdutosRowDeleting" msprop:Generator_RowChangingName="ProdutosRowChanging" msprop:Generator_RowEvHandlerName="ProdutosRowChangeEventHandler" msprop:Generator_RowDeletedName="ProdutosRowDeleted" msprop:Generator_UserTableName="Produtos" msprop:Generator_RowChangedName="ProdutosRowChanged" msprop:Generator_RowEvArgName="ProdutosRowChangeEvent" msprop:Generator_RowClassName="ProdutosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idProduto" msprop:Generator_ColumnVarNameInTable="columnidProduto" msprop:Generator_ColumnPropNameInRow="idProduto" msprop:Generator_ColumnPropNameInTable="idProdutoColumn" msprop:Generator_UserColumnName="idProduto" type="xs:string" />
+              <xs:element name="nomeProduto" msprop:Generator_ColumnVarNameInTable="columnnomeProduto" msprop:Generator_ColumnPropNameInRow="nomeProduto" msprop:Generator_ColumnPropNameInTable="nomeProdutoColumn" msprop:Generator_UserColumnName="nomeProduto" type="xs:string" minOccurs="0" />
+              <xs:element name="nomeCategoria" msprop:Generator_ColumnVarNameInTable="columnnomeCategoria" msprop:Generator_ColumnPropNameInRow="nomeCategoria" msprop:Generator_ColumnPropNameInTable="nomeCategoriaColumn" msprop:Generator_UserColumnName="nomeCategoria" type="xs:string" minOccurs="0" />
+              <xs:element name="nomeSubCategoria" msprop:Generator_ColumnVarNameInTable="columnnomeSubCategoria" msprop:Generator_ColumnPropNameInRow="nomeSubCategoria" msprop:Generator_ColumnPropNameInTable="nomeSubCategoriaColumn" msprop:Generator_UserColumnName="nomeSubCategoria" type="xs:string" minOccurs="0" />
+              <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao" type="xs:string" minOccurs="0" />
+              <xs:element name="preco" msprop:Generator_ColumnVarNameInTable="columnpreco" msprop:Generator_ColumnPropNameInRow="preco" msprop:Generator_ColumnPropNameInTable="precoColumn" msprop:Generator_UserColumnName="preco" type="xs:string" minOccurs="0" />
+              <xs:element name="imagem" msprop:Generator_ColumnVarNameInTable="columnimagem" msprop:Generator_ColumnPropNameInRow="imagem" msprop:Generator_ColumnPropNameInTable="imagemColumn" msprop:Generator_UserColumnName="imagem" type="xs:string" minOccurs="0" />
+              <xs:element name="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_UserColumnName="status" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Produtos" />
+      <xs:field xpath="mstns:idProduto" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
