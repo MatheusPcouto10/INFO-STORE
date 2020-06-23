@@ -117,3 +117,7 @@ C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA
 C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.View.RelatoriosForm.FormRelatorioFornecedores.resources
 C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.View.RelatoriosForm.FormRelatorioEntradas.resources
 C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.View.RelatoriosForm.FormRelatorioRetiradas.resources
+C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.View.FiltrosRelatoriosForms.FiltroRelatorioUsuarios.resources
+C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.View.FiltrosRelatoriosForms.FiltroRelatorioProdutos.resources
+C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.View.FiltrosRelatoriosForms.FiltroRelatorioEntradas.resources
+C:\Users\mathe\OneDrive\Documentos\UNITINS\TOP 3\INFO-STORE\obj\Debug\AvaliacaoA1.View.FiltrosRelatoriosForms.FiltroRelatorioRetiradas.resources

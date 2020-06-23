@@ -24,8 +24,8 @@ namespace AvaliacaoA1
         }
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            cmd.CommandText = "SELECT * FROM usuarios where email LIKE '" + txtLogin.Text +
-                               "' AND senha LIKE '" + txtSenha.Text + "'";
+            cmd.CommandText = "SELECT idUsuario, nome, email, senha, tipoUsuario, status FROM usuarios where email = '" + txtLogin.Text +
+                               "' AND senha = '" + txtSenha.Text + "'";
 
             try
             {
@@ -37,10 +37,10 @@ namespace AvaliacaoA1
                     FormMenu formMenu = new FormMenu();
                     FormCadastroEntradas formCadastroEntradas = new FormCadastroEntradas();
 
-                    UsuarioSession.tipoUsuario = dr[5].ToString();
+                    UsuarioSession.tipoUsuario = dr[4].ToString();
                     UsuarioSession.idUsuario = Convert.ToInt32(dr[0].ToString());
-                    UsuarioSession.nomeUsuario = dr[1].ToString().Substring(0, 9);
-                    string statusUsuario = dr[6].ToString();
+                    UsuarioSession.nomeUsuario = dr[1].ToString();
+                    string statusUsuario = dr[5].ToString();
 
                     if (statusUsuario.Equals("Ativo"))
                     {
@@ -57,12 +57,13 @@ namespace AvaliacaoA1
                     MessageBox.Show("Usuário e/ou senha incorretos!");
                     this.btnLimpar_Click(null, null);
                 }
-                conexao.Desconectar();
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro: " + ex);
             }
+            conexao.Desconectar();
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)

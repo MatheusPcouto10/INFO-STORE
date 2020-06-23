@@ -15,16 +15,17 @@ namespace AvaliacaoA1.View.RelatoriosForm
     {
         SqlCommand cmd = new SqlCommand();
         Conexao conexao = new Conexao();
+        public String comando;
         public FormRelatorioUsuario()
         {
             InitializeComponent();
         }
-        private void CarregarDataGrid()
+        private void CarregarRelatorio()
         {
             try
             {
                 cmd.Connection = conexao.Conectar();
-                cmd.CommandText = @"SELECT * FROM usuarios";
+                cmd.CommandText = comando;
 
 
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -38,7 +39,7 @@ namespace AvaliacaoA1.View.RelatoriosForm
                 }
                 else
                 {
-                    MessageBox.Show("erro");
+                    MessageBox.Show("Não foi encontrado");
                 }
             }
             catch (Exception erro)
@@ -49,7 +50,7 @@ namespace AvaliacaoA1.View.RelatoriosForm
         }
         private void FormRelatorioUsuario_Load(object sender, EventArgs e)
         {
-            this.CarregarDataGrid();
+            this.CarregarRelatorio();
             this.reportViewer1.RefreshReport();
         }
     }

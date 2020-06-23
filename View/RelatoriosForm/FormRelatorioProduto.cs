@@ -15,23 +15,17 @@ namespace AvaliacaoA1.View
     {
         SqlCommand cmd = new SqlCommand();
         Conexao conexao = new Conexao();
+        public String comando;
         public FormRelatorioProduto()
         {
             InitializeComponent();
         }
-        private void CarregarDataGrid()
+        private void CarregarRelatorio()
         {
             try
             {
                 cmd.Connection = conexao.Conectar();
-                cmd.CommandText = @"SELECT p.idProduto, p.nomeProduto, c.nomeCategoria, s.nomeSubCategoria, 
-                                           p.descricao, p.preco, p.imagem, p.status,
-                                           e.qtdDisponivel, e.precoAtual
-                                           FROM[dbo].[Produtos] AS p INNER JOIN dbo.Estoque AS e 
-                                           ON p.idProduto = e.idProduto_fk 
-                                           INNER JOIN dbo.SubCategorias AS s 
-                                           ON p.idSubCategoria_fk = s.idSubCategorias INNER JOIN dbo.Categorias AS c
-                                           ON s.idCategoria_fk = c.idCategoria";
+                cmd.CommandText = comando;
 
 
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -45,7 +39,7 @@ namespace AvaliacaoA1.View
                 }
                 else
                 {
-                    MessageBox.Show("erro");
+                    MessageBox.Show("Não foi encontrado");
                 }
             }
             catch (Exception erro)
@@ -57,7 +51,7 @@ namespace AvaliacaoA1.View
 
         private void FormRelatorioProduto_Load(object sender, EventArgs e)
         {
-            this.CarregarDataGrid();
+            this.CarregarRelatorio();
             this.reportViewer1.RefreshReport();
         }
     }

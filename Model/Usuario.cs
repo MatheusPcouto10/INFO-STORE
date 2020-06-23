@@ -75,6 +75,7 @@ namespace AvaliacaoA1
                                                                  "', quadra = '" + t.quadra +
                                                                  "', alameda = '" + t.alameda +
                                                                  "', lote = '" + t.lote +
+                                                                 "', status = '" + t.Status +
                                                                  "' WHERE idUsuario LIKE '" + idUsuario + "'";
                 cmd.Connection = conexao.Conectar();
                 cmd.ExecuteNonQuery();

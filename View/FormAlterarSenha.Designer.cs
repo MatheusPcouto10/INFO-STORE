@@ -46,7 +46,7 @@
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.Color.Black;
-            this.btnSalvar.Location = new System.Drawing.Point(104, 224);
+            this.btnSalvar.Location = new System.Drawing.Point(109, 224);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(125, 41);
@@ -120,7 +120,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(367, 276);
+            this.ClientSize = new System.Drawing.Size(341, 276);
             this.Controls.Add(this.txtSenhaAtual);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSalvar);

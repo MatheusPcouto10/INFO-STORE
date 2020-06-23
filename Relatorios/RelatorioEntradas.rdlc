@@ -418,7 +418,6 @@
                       <rd:DefaultName>dataEntrada</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
                         <VerticalAlign>Middle</VerticalAlign>
@@ -428,7 +427,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -487,7 +485,6 @@
                       <rd:DefaultName>precoEntrada</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
                         <VerticalAlign>Middle</VerticalAlign>
@@ -635,9 +632,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
           <Top>2.07687cm</Top>
-          <Left>11.83783cm</Left>
+          <Left>11.32983cm</Left>
           <Height>0.6cm</Height>
-          <Width>5.1035cm</Width>
+          <Width>5.6115cm</Width>
           <Style>
             <Border>
               <Style>None</Style>

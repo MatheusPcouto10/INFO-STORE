@@ -106,60 +106,84 @@
     <Compile Include="Model\Retiradas.cs" />
     <Compile Include="Session\UsuarioSession.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="View\FiltrosRelatoriosForms\FiltroRelatorioEntradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FiltrosRelatoriosForms\FiltroRelatorioEntradas.Designer.cs">
+      <DependentUpon>FiltroRelatorioEntradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FiltrosRelatoriosForms\FiltroRelatorioProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FiltrosRelatoriosForms\FiltroRelatorioProdutos.Designer.cs">
+      <DependentUpon>FiltroRelatorioProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FiltrosRelatoriosForms\FiltroRelatorioRetiradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FiltrosRelatoriosForms\FiltroRelatorioRetiradas.Designer.cs">
+      <DependentUpon>FiltroRelatorioRetiradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FiltrosRelatoriosForms\FiltroRelatorioUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FiltrosRelatoriosForms\FiltroRelatorioUsuarios.Designer.cs">
+      <DependentUpon>FiltroRelatorioUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormAlterarSenha.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FormAlterarSenha.Designer.cs">
       <DependentUpon>FormAlterarSenha.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormCadastroCategoria.cs">
+    <Compile Include="View\ProdutosForms\FormCadastroCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormCadastroCategoria.Designer.cs">
+    <Compile Include="View\ProdutosForms\FormCadastroCategoria.Designer.cs">
       <DependentUpon>FormCadastroCategoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormCadastroFornecedor.cs">
+    <Compile Include="View\FornecedoresForms\FormCadastroFornecedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormCadastroFornecedor.Designer.cs">
+    <Compile Include="View\FornecedoresForms\FormCadastroFornecedor.Designer.cs">
       <DependentUpon>FormCadastroFornecedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\formCadastroSubCategoria.cs">
+    <Compile Include="View\ProdutosForms\formCadastroSubCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\formCadastroSubCategoria.Designer.cs">
+    <Compile Include="View\ProdutosForms\formCadastroSubCategoria.Designer.cs">
       <DependentUpon>formCadastroSubCategoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormCadastroUsuario.cs">
+    <Compile Include="View\UsuariosForms\FormCadastroUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormCadastroUsuario.Designer.cs">
+    <Compile Include="View\UsuariosForms\FormCadastroUsuario.Designer.cs">
       <DependentUpon>FormCadastroUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\SubCategorias.cs" />
     <Compile Include="Conexão\Conexao.cs" />
-    <Compile Include="View\FormGerenciarFornecedores.cs">
+    <Compile Include="View\FornecedoresForms\FormGerenciarFornecedores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormGerenciarFornecedores.Designer.cs">
+    <Compile Include="View\FornecedoresForms\FormGerenciarFornecedores.Designer.cs">
       <DependentUpon>FormGerenciarFornecedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormGerenciarUsuario.cs">
+    <Compile Include="View\UsuariosForms\FormGerenciarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormGerenciarUsuario.Designer.cs">
+    <Compile Include="View\UsuariosForms\FormGerenciarUsuario.Designer.cs">
       <DependentUpon>FormGerenciarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormHistoricoEntradas.cs">
+    <Compile Include="View\EntradasForms\FormHistoricoEntradas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormHistoricoEntradas.Designer.cs">
+    <Compile Include="View\EntradasForms\FormHistoricoEntradas.Designer.cs">
       <DependentUpon>FormHistoricoEntradas.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormHistoricoRetiradas.cs">
+    <Compile Include="View\RetiradasForms\FormHistoricoRetiradas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormHistoricoRetiradas.Designer.cs">
+    <Compile Include="View\RetiradasForms\FormHistoricoRetiradas.Designer.cs">
       <DependentUpon>FormHistoricoRetiradas.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormMenu.cs">
@@ -168,28 +192,28 @@
     <Compile Include="View\FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormCadastroEntradas.cs">
+    <Compile Include="View\EntradasForms\FormCadastroEntradas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormCadastroEntradas.Designer.cs">
+    <Compile Include="View\EntradasForms\FormCadastroEntradas.Designer.cs">
       <DependentUpon>FormCadastroEntradas.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormCadastroProduto.cs">
+    <Compile Include="View\ProdutosForms\FormCadastroProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormCadastroProduto.Designer.cs">
+    <Compile Include="View\ProdutosForms\FormCadastroProduto.Designer.cs">
       <DependentUpon>FormCadastroProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormCadastroRetiradas.cs">
+    <Compile Include="View\RetiradasForms\FormCadastroRetiradas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormCadastroRetiradas.Designer.cs">
+    <Compile Include="View\RetiradasForms\FormCadastroRetiradas.Designer.cs">
       <DependentUpon>FormCadastroRetiradas.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormEstoque.cs">
+    <Compile Include="View\ProdutosForms\FormEstoque.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormEstoque.Designer.cs">
+    <Compile Include="View\ProdutosForms\FormEstoque.Designer.cs">
       <DependentUpon>FormEstoque.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormLogin.cs">
@@ -211,16 +235,16 @@
     <Compile Include="Model\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\FormPesquisaFornecedor.cs">
+    <Compile Include="View\FornecedoresForms\FormPesquisaFornecedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormPesquisaFornecedor.Designer.cs">
+    <Compile Include="View\FornecedoresForms\FormPesquisaFornecedor.Designer.cs">
       <DependentUpon>FormPesquisaFornecedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormPesquisaProduto.cs">
+    <Compile Include="View\ProdutosForms\FormPesquisaProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormPesquisaProduto.Designer.cs">
+    <Compile Include="View\ProdutosForms\FormPesquisaProduto.Designer.cs">
       <DependentUpon>FormPesquisaProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="View\RelatoriosForm\FormRelatorioEntradas.cs">
@@ -264,46 +288,58 @@
     <EmbeddedResource Include="Relatorios\RelatorioProdutos.rdlc" />
     <EmbeddedResource Include="Relatorios\RelatorioRetiradas.rdlc" />
     <EmbeddedResource Include="Relatorios\RelatorioUsuarios.rdlc" />
+    <EmbeddedResource Include="View\FiltrosRelatoriosForms\FiltroRelatorioEntradas.resx">
+      <DependentUpon>FiltroRelatorioEntradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FiltrosRelatoriosForms\FiltroRelatorioProdutos.resx">
+      <DependentUpon>FiltroRelatorioProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FiltrosRelatoriosForms\FiltroRelatorioRetiradas.resx">
+      <DependentUpon>FiltroRelatorioRetiradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FiltrosRelatoriosForms\FiltroRelatorioUsuarios.resx">
+      <DependentUpon>FiltroRelatorioUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormAlterarSenha.resx">
       <DependentUpon>FormAlterarSenha.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormCadastroCategoria.resx">
+    <EmbeddedResource Include="View\ProdutosForms\FormCadastroCategoria.resx">
       <DependentUpon>FormCadastroCategoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormCadastroFornecedor.resx">
+    <EmbeddedResource Include="View\FornecedoresForms\FormCadastroFornecedor.resx">
       <DependentUpon>FormCadastroFornecedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\formCadastroSubCategoria.resx">
+    <EmbeddedResource Include="View\ProdutosForms\formCadastroSubCategoria.resx">
       <DependentUpon>formCadastroSubCategoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormCadastroUsuario.resx">
+    <EmbeddedResource Include="View\UsuariosForms\FormCadastroUsuario.resx">
       <DependentUpon>FormCadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormGerenciarFornecedores.resx">
+    <EmbeddedResource Include="View\FornecedoresForms\FormGerenciarFornecedores.resx">
       <DependentUpon>FormGerenciarFornecedores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormGerenciarUsuario.resx">
+    <EmbeddedResource Include="View\UsuariosForms\FormGerenciarUsuario.resx">
       <DependentUpon>FormGerenciarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormHistoricoEntradas.resx">
+    <EmbeddedResource Include="View\EntradasForms\FormHistoricoEntradas.resx">
       <DependentUpon>FormHistoricoEntradas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormHistoricoRetiradas.resx">
+    <EmbeddedResource Include="View\RetiradasForms\FormHistoricoRetiradas.resx">
       <DependentUpon>FormHistoricoRetiradas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormCadastroEntradas.resx">
+    <EmbeddedResource Include="View\EntradasForms\FormCadastroEntradas.resx">
       <DependentUpon>FormCadastroEntradas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormCadastroProduto.resx">
+    <EmbeddedResource Include="View\ProdutosForms\FormCadastroProduto.resx">
       <DependentUpon>FormCadastroProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormCadastroRetiradas.resx">
+    <EmbeddedResource Include="View\RetiradasForms\FormCadastroRetiradas.resx">
       <DependentUpon>FormCadastroRetiradas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormEstoque.resx">
+    <EmbeddedResource Include="View\ProdutosForms\FormEstoque.resx">
       <DependentUpon>FormEstoque.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormLogin.resx">
@@ -314,10 +350,10 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormPesquisaFornecedor.resx">
+    <EmbeddedResource Include="View\FornecedoresForms\FormPesquisaFornecedor.resx">
       <DependentUpon>FormPesquisaFornecedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormPesquisaProduto.resx">
+    <EmbeddedResource Include="View\ProdutosForms\FormPesquisaProduto.resx">
       <DependentUpon>FormPesquisaProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\RelatoriosForm\FormRelatorioEntradas.resx">

@@ -15,21 +15,17 @@ namespace AvaliacaoA1.View.RelatoriosForm
     {
         SqlCommand cmd = new SqlCommand();
         Conexao conexao = new Conexao();
+        public string comando;
         public FormRelatorioEntradas()
         {
             InitializeComponent();
         }
-        private void CarregarDataGrid()
+        private void CarregarRelatorio()
         {
             try
             {
                 cmd.Connection = conexao.Conectar();
-                cmd.CommandText = @"SELECT e.idEntradas, u.nome, p.nomeProduto, 
-                                           e.qtdEntrada, e.dataEntrada, e.precoEntrada, e.idFornecedor_fk, f.nomeFantasia
-                                           FROM dbo.Entradas AS e INNER JOIN dbo.Usuarios AS u
-	                                       ON e.idUsuario_fk = u.idUsuario INNER JOIN dbo.Produtos AS p
-                                           ON e.idProduto_fk = p.idProduto INNER JOIN dbo.Fornecedores AS f
-                                           ON e.idFornecedor_fk = f.idFornecedor";
+                cmd.CommandText = comando;
 
 
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -43,7 +39,7 @@ namespace AvaliacaoA1.View.RelatoriosForm
                 }
                 else
                 {
-                    MessageBox.Show("erro");
+                    MessageBox.Show("Não foi encontrado");
                 }
             }
             catch (Exception erro)
@@ -54,7 +50,7 @@ namespace AvaliacaoA1.View.RelatoriosForm
         }
         private void FormRelatorioEntradas_Load(object sender, EventArgs e)
         {
-            this.CarregarDataGrid();
+            this.CarregarRelatorio();
             this.reportViewer1.RefreshReport();
         }
     }

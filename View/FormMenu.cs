@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using AvaliacaoA1.View;
 using AvaliacaoA1.Session;
 using AvaliacaoA1.View.RelatoriosForm;
+using AvaliacaoA1.View.FiltrosRelatoriosForms;
 
 namespace AvaliacaoA1
 {
@@ -162,13 +163,13 @@ namespace AvaliacaoA1
 
         private void relatorioDeProdutosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormRelatorioProduto form = new FormRelatorioProduto();
+            FiltroRelatorioProdutos form = new FiltroRelatorioProdutos();
             form.Show();
         }
 
         private void relatorioDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormRelatorioUsuario form = new FormRelatorioUsuario();
+            FiltroRelatorioUsuarios form = new FiltroRelatorioUsuarios();
             form.Show();
         }
 
@@ -180,13 +181,13 @@ namespace AvaliacaoA1
 
         private void relatorioDeEntradasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormRelatorioEntradas form = new FormRelatorioEntradas();
+            FiltroRelatorioEntradas form = new FiltroRelatorioEntradas();
             form.Show();
         }
 
         private void relatorioDeRetiradasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormRelatorioRetiradas form = new FormRelatorioRetiradas();
+            FiltroRelatorioRetiradas form = new FiltroRelatorioRetiradas();
             form.Show();
         }
     }
